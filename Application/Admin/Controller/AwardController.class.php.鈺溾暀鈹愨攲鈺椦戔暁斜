@@ -1,0 +1,247 @@
+<?php
+/*
+ * 此页面仅用于命令行模式
+ */
+namespace Admin\Controller;
+use Think\Controller;
+class AwardController extends Controller 
+{
+  
+	public function tt()
+	{
+		echo 'tt';
+	}
+
+	public function index()
+	{
+	
+		
+		$modelAward 	= M('award_log');
+		$modelSetAward	= M('set_award');
+		$modelAwardAll  = M('award');
+		
+		//while start
+		while(true){
+	
+			$arr = getNowDate();
+						
+			//if stopping start
+			if($arr != 'stopping')
+			{
+				//判断当前时间是否已存在数据库
+				$where = array();
+				$where['time_day'] 		= date('Ymd');
+				$where['time_hour'] 	= $arr['hour'];
+				$where['time_minute']	= $arr['formatMinute'];
+				
+				$rowAward = $modelAward->where($where)->find();
+				
+				$where2 = array();
+				$where2['time_hour'] 	= $arr['hour'];
+				$where2['time_minute']	= $arr['formatMinute'];
+				$rowAwardAll = $modelAwardAll->where($where)->find();
+				//获取第几期
+				$pharse = $rowAwardAll['phase'];
+				
+				//empty start
+				//数据库无开奖记录，请求接口服务器
+				if(empty($rowAward))
+				{
+					if($arr['hour'] == '00' && $arr['formatMinute'] == '00')
+					{
+						$time = date('Y-m-d', strtotime('-1 day'));
+					}else{
+						$time = date('Y-m-d');
+					}
+
+					//$url 	= 'http://www.xhcfdr.com/ssc_wechat/dataAnalyze/list?dateTime='.$time;
+					$url 	= 'http://www.yingtanqc.com/ssc_wechat/dataAnalyze/list?dateTime='.$time;
+						
+					//最多请求5次 接口服务器
+					//for start
+					for($i=1; $i<=5; $i++){
+						
+						//curl
+						$curl = curl_init();
+						//设置抓取的url
+						curl_setopt($curl, CURLOPT_URL, $url);
+						//设置头文件的信息作为数据流输出
+						curl_setopt($curl, CURLOPT_HEADER,0);
+						//设置获取的信息以文件流的形式返回，而不是直接输出。
+						curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+						//执行命令
+						$re = curl_exec($curl);
+												
+						//关闭URL请求
+						curl_close($curl);
+						
+						//显示获得的数据
+						$reArray = json_decode($re, true); //返回结果转为数组
+						
+
+						$reArray 	= json_decode($reArray['data'],true);
+						$reNumber 	= $reArray[0]['drawNo'];
+						
+						$reNumber = explode(',', $reNumber);
+						
+						$returnPharse = $reArray[0]['issue'];
+						
+						if($reArray[0]['issue'] < 10)
+						{
+							$returnPharse = '00'.$reArray[0]['issue'];
+						}
+						
+						if($reArray[0] >= 10 && $reArray[0]<100){
+							$returnPharse = '0'.$reArray[0]['issue'];
+						}
+						
+						
+						//返回结果第一条数据为最新数据break
+						if($returnPharse == $pharse)
+						{
+							$data = array();
+							$data['phase'] 		= $rowAwardAll['phase'];
+							$data['time_day']	= date('Ymd');
+							$data['time_hour']	= $arr['hour'];
+							$data['time_minute']= $arr['formatMinute'];
+							$data['time_post']	= date('Y-m-d H:i:s');
+							
+							//判断是否预设奖
+							$rowSetAward = $modelSetAward->where(array('time_day'=>date('Ymd'), 'time_hour'=>$arr['hour'], 'time_minute'=>$arr['formatMinute'], 'phase'=>$reArray[0]['issue']))->find();
+							
+							if(empty($rowSetAward)){
+							
+								$data['one']		= $reNumber[0];
+								$data['two']		= $reNumber[1];
+								$data['three']		= $reNumber[2];
+								$data['four']		= $reNumber[3];
+								$data['five']		= $reNumber[4];
+								$data['total']		= array_sum($reNumber);
+								
+							}else{
+								
+								$data['one']		= $rowSetAward['one'];
+								$data['two']		= $rowSetAward['two'];
+								$data['three']		= $rowSetAward['three'];
+								$data['four']		= $rowSetAward['four'];
+								$data['five']		= $rowSetAward['five'];
+								$data['total']		= $rowSetAward['one'] + $rowSetAward['two'] + $rowSetAward['three'] + $rowSetAward['four'] + $rowSetAward['five'];
+								
+							}
+							
+
+							$result = $modelAward->add($data);
+													
+							if($result)
+							{
+								//计算佣金
+								$this->_perfomMin($data);
+								$this->_perfomMax($data);
+								break;
+							}
+							
+						}
+						sleep(5);
+							
+					}
+					//for end
+				
+				}
+				//empty end
+				
+				
+			}
+			//if stopping end
+			
+			sleep(5);
+		}
+		//while stop
+	}
+	
+	
+	//获奖结果处理
+	private function _perfomMax($data)
+	{
+		//获取当前开奖结果是否预设
+		$num = $data['one'].$data['two'].$data['three'].$data['four'].$data['five'];
+		
+		//更新分类1 1-110
+		$lastNum = $num%110+1;
+
+		
+		//结果
+		if($lastNum <= 55 && $lastNum >=1)
+		{
+			$snatch_type = 1;
+		}
+		
+		if($lastNum >= 56 && $lastNum <= 110)
+		{
+			$snatch_type = 2;		
+		}
+		
+		$where = array();
+		$where['snatch_type'] 	= $snatch_type;
+		$where['pay_status']	= 1;
+		$where['time_day']		= $data['time_day'];
+		$where['phase']			= $data['phase'];
+		$where['catagory_id']	= 1;
+		
+		$model = M('order');
+		$model->where($where)->save(array('result'=>2, 'number_win'=>$lastNum, 'open_time'=>date('Y-m-d H:i:s')));
+		
+		if($snatch_type == 1){
+			$where['snatch_type'] = 2;
+		}
+		if($snatch_type == 2){
+			$where['snatch_type'] = 1;
+		}
+		$model->where($where)->save(array('result'=>1,'number_win'=>$lastNum, 'open_time'=>date('Y-m-d H:i:s')));
+		
+	}
+	
+	//获奖结果处理
+	private function _perfomMin($data)
+	{
+		//获取当前开奖结果是否预设
+		$num = $data['one'].$data['two'].$data['three'].$data['four'].$data['five'];
+	
+		//更新分类1 1-110
+		$lastNum = $num%56+1;
+	
+	
+		//结果
+		if($lastNum <= 28 && $lastNum >=1)
+		{
+			$snatch_type = 1;
+		}
+	
+		if($lastNum >= 29 && $lastNum <= 56)
+		{
+			$snatch_type = 2;
+		}
+	
+		$where = array();
+		$where['snatch_type'] 	= $snatch_type;
+		$where['pay_status']	= 1;
+		$where['time_day']		= $data['time_day'];
+		$where['phase']			= $data['phase'];
+		$where['catagory_id']	= 2;
+	
+		$model = M('order');
+		$model->where($where)->save(array('result'=>2, 'number_win'=>$lastNum, 'open_time'=>date('Y-m-d H:i:s')));
+	
+		if($snatch_type == 1){
+			$where['snatch_type'] = 2;
+		}
+		if($snatch_type == 2){
+			$where['snatch_type'] = 1;
+		}
+		$model->where($where)->save(array('result'=>1, 'number_win'=>$lastNum, 'open_time'=>date('Y-m-d H:i:s')));
+	
+	}
+	  
+
+    
+    
+}

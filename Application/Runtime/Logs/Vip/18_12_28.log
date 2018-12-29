@@ -1,0 +1,446 @@
+[ 2018-12-28T16:52:32+08:00 ] ::1 /vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0072s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE `user_id` = 1 AND `result` = 2 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sh_order` WHERE ( `pay_time` >= '2018-12-28 00:00:00' AND `pay_time` <= '2018-12-28 23:59:59'  ) AND `pay_status` = 1 AND `user_id` = 1  [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sh_order` WHERE ( `pay_time` >= '2018-12-28 00:00:00' AND `pay_time` <= '2018-12-28 23:59:59'  ) AND `pay_status` = 1 AND `user_id` = 1 AND `result` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sh_order` WHERE ( `pay_time` >= '2018-12-28 00:00:00' AND `pay_time` <= '2018-12-28 23:59:59'  ) AND `pay_status` = 1 AND `user_id` = 1 AND `result` = 2  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2018-12-28T16:52:33+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2018-12-28T16:54:46+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003745s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003786s ]
+
+[ 2018-12-28T16:56:11+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004483s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004322s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005182s ]
+
+[ 2018-12-28T16:56:15+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T16:57:35+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003755s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003582s ]
+
+[ 2018-12-28T16:58:55+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2018-12-28T16:59:06+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T16:59:26+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004379s ]
+
+[ 2018-12-28T16:59:31+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:01:10+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004258s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003507s ]
+
+[ 2018-12-28T17:01:15+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:01:49+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004090s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003526s ]
+
+[ 2018-12-28T17:01:52+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:02:18+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003773s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004549s ]
+
+[ 2018-12-28T17:02:20+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:02:40+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003713s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004665s ]
+
+[ 2018-12-28T17:02:43+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:02:46+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:02:48+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:03:21+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-12-28T17:03:24+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `sh_points_order` [ RunTime:0.0207s ]
+SQL: INSERT INTO `sh_points_order` (`order_id`,`user_id`,`created`,`money`,`pay_type`) VALUES ('18122817032465114','1','2018-12-28 17:03:24','10','1') [ RunTime:0.0081s ]
+
+[ 2018-12-28T17:03:44+08:00 ] ::1 /vip/points/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003967s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Vip/10e97dde5ec623c2711c5fc5e2a0c519.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004461s ]
+
+[ 2018-12-28T17:03:48+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `sh_points_order` [ RunTime:0.0082s ]
+SQL: INSERT INTO `sh_points_order` (`order_id`,`user_id`,`created`,`money`,`pay_type`) VALUES ('18122817034710401','1','2018-12-28 17:03:47','10','1') [ RunTime:0.0036s ]
+
+[ 2018-12-28T17:04:20+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `sh_points_order` [ RunTime:0.0072s ]
+SQL: INSERT INTO `sh_points_order` (`order_id`,`user_id`,`created`,`money`,`pay_type`) VALUES ('18122817042084695','1','2018-12-28 17:04:20','10','1') [ RunTime:0.0031s ]
+
+[ 2018-12-28T17:06:11+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003699s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:06:14+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+
+[ 2018-12-28T17:06:33+08:00 ] ::1 /vip/points/submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+NOTIC: [2048] Declaration of Vip\Controller\PointsController::get() should be compatible with Think\Controller::get($name = '') /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Vip/Controller/PointsController.class.php 第 8 行.
+

@@ -1,0 +1,335 @@
+[ 2018-12-24T17:53:31+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000329s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013916s ]
+
+[ 2018-12-24T18:00:39+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003324s ]
+
+[ 2018-12-24T18:00:39+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006788s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011154s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003708s ]
+
+[ 2018-12-24T19:00:53+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005492s ]
+
+[ 2018-12-24T19:00:53+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003150s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007068s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:14) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003600s ]
+
+[ 2018-12-24T19:00:59+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+NOTIC: [8] Undefined index: invite /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php 第 74 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 237 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 241 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 245 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2018-12-24T19:01:25+08:00 ] ::1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003118s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'db_app'@'localhost' (using password: YES)
+
+[ 2018-12-24T19:02:07+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003920s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'db_app'@'localhost' (using password: YES)
+
+[ 2018-12-24T19:03:22+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003917s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'com_app_www'
+
+[ 2018-12-24T19:04:20+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004145s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `sh_message` SET `time_error`=time_error+1 WHERE ( phone=13987654321 ) [ RunTime:0.0036s ]
+
+[ 2018-12-24T19:05:44+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004072s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '1111' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '022967' LIMIT 1   [ RunTime:0.0006s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'parent_id' cannot be null
+
+[ 2018-12-24T19:06:16+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004133s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '1111' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '705734' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sh_user` (`parent_id`,`phone`,`create_time`,`password`,`invite`) VALUES ('1','13987654321','2018-12-24 19:06:16','123456','705734') [ RunTime:0.0039s ]
+
+[ 2018-12-24T19:06:16+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+
+[ 2018-12-24T19:06:16+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003709s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006319s ]
+
+[ 2018-12-24T19:42:34+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004101s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0061s ]
+
+[ 2018-12-24T19:42:34+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d68a26a8dcbb03aca7905f05f89d0f15.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003598s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008837s ]
+
+[ 2018-12-24T19:42:34+08:00 ] ::1 /Public/Css/slick.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-24T19:42:40+08:00 ] ::1 /Public/Css/slick.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-24T19:42:56+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0071s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0073s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002329s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003997s ]
+
+[ 2018-12-24T19:42:58+08:00 ] ::1 /index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sh_goods` WHERE ( id =3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sh_catagory` WHERE ( id =3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_award_log` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `sh_award_log` ORDER BY id desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0078s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 AND `goods_id` = '3' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0070s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `goods_id` = '3' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/IndexController.class.php 第 84 行.
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+

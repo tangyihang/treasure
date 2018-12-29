@@ -1,0 +1,160 @@
+[ 2018-12-29T18:05:42+08:00 ] ::1 /?id=9981.901196308721
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006177s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0213s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0104s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0070s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004520s ]
+
+[ 2018-12-29T18:05:51+08:00 ] ::1 /rank/day
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0085s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,sum(goods_num) as num FROM sh_order o LEFT JOIN sh_user as u ON o.user_id = u.id  WHERE ( o.result=2 AND o.create_time >=  NOW() - interval 1 day ) GROUP BY o.user_id ORDER BY num desc LIMIT 20   [ RunTime:0.0077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003558s ]
+
+[ 2018-12-29T18:05:52+08:00 ] ::1 /rank/look
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_award_log` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sh_award_log` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-12-29T18:05:53+08:00 ] ::1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0075s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0080s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2018-12-29T18:06:03+08:00 ] ::1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0113s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0090s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+

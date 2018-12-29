@@ -1,0 +1,25 @@
+.tip{color:#FF5722;height:3rem;}
+.sub{border-radius:3rem;}
+.mx{border-radius:1.5rem;}
+.recharge{border:1px solid #FF9800;display:inline-block;padding: 0 1.5rem;color:#FF9800;margin-top:2rem;border-radius:0.5rem;}
+.recharge_con div:nth-child(1n){padding-right:1rem;text-align:right;}
+.recharge_con div:nth-child(2n){padding-left:1rem;text-align:left;}
+.recharge-title{font-weight:800;font-size:2rem;}
+.pay-now{border:1px solid #3AC1EE; color:#3AC1EE;border-radius:1.5rem;padding: 0 1rem;}
+.refresh{position:fixed;right:1rem;bottom:3rem;width:6rem;}
+
+
+
+/*配送端*/
+.dis-num{position:absolute;right:0px;background:#FF0004;color:#FFF;line-height:1.7rem;width:1.7rem;height:1.7rem;border-radius:5rem;margin-top:0.5rem;}
+.dateFor{width:35%;background:#E8E8E8;border-radius:3rem;padding-left:3%;border:none; outline:none;}
+
+
+/*登录*/
+.login-bg{background:#39A0FC;}
+.username{background:url('/Public/Images/User/User.png') no-repeat;}
+.password{background:url('/Public/Images/User/password.png') no-repeat;}
+.login{background-size:2.5rem 2.5rem; background-position:1.5rem 0.8rem;outline:none;box-shadow:none; border:1px solid #FFF;line-height:4rem;border-radius:3rem;width:100%;padding-left:5.5rem;color:#FFF;position:relative;}
+.border-1{width:1px;background:#FFF;height:2.5rem;position:absolute;top:0.8rem;left:7.7rem;}
+.btn-login{border-radius:3rem;color:#03A9F4;line-height:4rem;background:#FFF;font-size:2rem;}
+.water-active{background:#FF9800;color:#FFF !important;}

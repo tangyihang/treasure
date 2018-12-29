@@ -1,0 +1,334 @@
+[ 2018-12-25T16:31:38+08:00 ] ::1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009675s ]
+NOTIC: [8] Undefined index: admin /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Admin/Controller/BaseController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 25 行.
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 26 行.
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 31 行.
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 32 行.
+NOTIC: [8] Undefined variable: position /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 37 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 48 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 49 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 50 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 51 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 52 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 53 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 54 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 56 行.
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 57 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 57 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 58 行.
+NOTIC: [8] Undefined variable: adminid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 59 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 59 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/67d47ff9d51c2e0c1685b0c15a62a4ae.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005220s ]
+
+[ 2018-12-25T16:32:19+08:00 ] ::1 /admin/member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003260s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003676s ]
+
+[ 2018-12-25T16:32:20+08:00 ] ::1 /admin/member/piccode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2018-12-25T16:32:27+08:00 ] ::1 /admin/member/piccode?0.008166894093890598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-12-25T16:32:28+08:00 ] ::1 /admin/member/piccode?0.36526385357568536
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2018-12-25T16:32:33+08:00 ] ::1 /admin/member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `sh_admin` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `sh_admin` WHERE `member_name` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2018-12-25T16:32:34+08:00 ] ::1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0077s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 1 AND `snatch_type` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 1 AND `snatch_type` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 2 AND `snatch_type` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 2 AND `snatch_type` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 3 AND `snatch_type` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT sum(goods_price_sum) as sum FROM `sh_order` WHERE `time_day` = 20181225 AND `time_hour` = 16 AND `time_minute` = 40 AND `pay_status` = 1 AND `catagory_id` = 3 AND `snatch_type` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_award` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sh_award` WHERE `time_hour` = 16 AND `time_minute` = 40 LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sh_user` WHERE ( `create_time` >= '' AND `create_time` <= ''  ) LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT `id` FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 GROUP BY user_id  [ RunTime:0.0034s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `result` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `result` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `result` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `result` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 AND `result` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 AND `result` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 AND `result` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 1 AND `result` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 2 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(goods_price_sum) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(goods_num) AS tp_sum FROM `sh_order` WHERE ( `pay_time` >= '' AND `pay_time` <= ''  ) AND `pay_status` = 1 AND `catagory_id` = 2 AND `result` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 48 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 49 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 50 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 51 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 52 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 53 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 54 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 56 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 57 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 58 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 59 行.
+NOTIC: [8] Undefined variable: access /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/7dd32b9e78acec0f141180f659d3894e.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2018-12-25T16:32:41+08:00 ] ::1 /Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sh_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sh_user` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/menu.tpl): failed to open stream: No such file or directory /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: phone /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 89 行.
+NOTIC: [8] Undefined index: parent_id /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 96 行.
+NOTIC: [8] Undefined variable: start /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 103 行.
+NOTIC: [8] Undefined variable: end /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001743s ]
+
+[ 2018-12-25T16:32:44+08:00 ] ::1 /Admin/user/set_type?id=2&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0071s ]
+SQL: UPDATE `sh_user` SET `tui_type`='1' WHERE `id` = 2 [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+
+[ 2018-12-25T16:32:45+08:00 ] ::1 /Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sh_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sh_user` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/menu.tpl): failed to open stream: No such file or directory /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: phone /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 89 行.
+NOTIC: [8] Undefined index: parent_id /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 96 行.
+NOTIC: [8] Undefined variable: start /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 103 行.
+NOTIC: [8] Undefined variable: end /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-12-25T16:33:14+08:00 ] ::1 /Admin/user/user_one?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0070s ]
+SQL: call showUserSon(2,0,1000) [ RunTime:0.0428s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0075s ]
+SQL: SELECT SUM(case when catagory_id = 1 then goods_num else 0 end) as sum_number_c1,SUM(case when catagory_id = 2 then goods_num else 0 end) as sum_number_c2 FROM `sh_order` WHERE `user_id` = 2 AND `pay_status` = 1 LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/menu.tpl): failed to open stream: No such file or directory /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: page /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/c6ac4f3971f2b92cf8b3a73d606f28d0.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-12-25T16:33:23+08:00 ] ::1 /Admin/user/set_type?id=1&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0109s ]
+SQL: UPDATE `sh_user` SET `tui_type`='1' WHERE `id` = 1 [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+
+[ 2018-12-25T16:33:24+08:00 ] ::1 /Admin/User/read
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `sh_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sh_user` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/menu.tpl): failed to open stream: No such file or directory /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: phone /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 89 行.
+NOTIC: [8] Undefined index: parent_id /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 96 行.
+NOTIC: [8] Undefined variable: start /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 103 行.
+NOTIC: [8] Undefined variable: end /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Admin/5045758f258396c7944f6eb33a797abf.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+

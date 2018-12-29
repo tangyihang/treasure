@@ -1,0 +1,1 @@
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 65552 bytes) in /www/com_duobao_www/ThinkPHP/Library/Think/Db/Driver.class.php on line 193

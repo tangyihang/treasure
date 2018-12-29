@@ -1,0 +1,759 @@
+[ 2018-12-25T09:30:45+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003177s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004038s ]
+
+[ 2018-12-25T09:31:31+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005209s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0465s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0106s ]
+
+[ 2018-12-25T09:31:37+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-12-25T09:31:38+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001847s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0086s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0070s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004119s ]
+
+[ 2018-12-25T09:31:41+08:00 ] ::1 /index/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002104s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_goods` WHERE ( id =3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sh_catagory` WHERE ( id =3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_award_log` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sh_award_log` ORDER BY id desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0068s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 AND `goods_id` = '3' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0089s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `goods_id` = '3' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/IndexController.class.php 第 84 行.
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002954s ]
+
+[ 2018-12-25T09:43:04+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-12-25T09:43:08+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [8] Undefined index: invite /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php 第 73 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 237 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 241 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 245 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d0b27ace22740bb00cc2d4b826014f76.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2018-12-25T09:43:35+08:00 ] ::1 /User/code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0073s ]
+SQL: SELECT `id` FROM `sh_user` WHERE ( phone=18146518940 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0165s ]
+SQL: SELECT `id`,`time`,`send_times`,`is_used` FROM `sh_message` WHERE ( phone=18146518940 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: HTTP_X_FORWARDED_FOR /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Common/Common/function.php 第 49 行.
+NOTIC: [8] Undefined index: HTTP_CLIENT_IP /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Common/Common/function.php 第 51 行.
+SQL: SHOW COLUMNS FROM `sh_message_ip` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sh_message_ip` WHERE `ip` = '::1' LIMIT 1   [ RunTime:0.0014s ]
+SQL: INSERT INTO `sh_message` (`phone`,`code`,`time`,`send_times`) VALUES ('18146518940','139381','1545702215','1') [ RunTime:0.0039s ]
+SQL: INSERT INTO `sh_message_ip` (`ip`,`send_times`,`time`) VALUES ('::1','1','1545702215') [ RunTime:0.0041s ]
+
+[ 2018-12-25T09:44:08+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `sh_message` SET `time_error`=time_error+1 WHERE ( phone=18146518940 ) [ RunTime:0.0062s ]
+
+[ 2018-12-25T09:44:30+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003931s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '13987654321' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-12-25T09:45:15+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003824s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '13987654321' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:122) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Controller.class.php 第 215 行.
+
+[ 2018-12-25T09:46:18+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003978s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '705734' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sh_user` WHERE `invite` = '681368' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `sh_user` (`parent_id`,`phone`,`create_time`,`password`,`invite`) VALUES ('1','18146518940','2018-12-25 09:46:18','111111','681368') [ RunTime:0.0046s ]
+SQL: UPDATE `sh_message` SET `is_used`='1' WHERE `id` = 1 [ RunTime:0.0072s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/UserController.class.php:122) /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/ThinkPHP/Library/Think/Controller.class.php 第 215 行.
+
+[ 2018-12-25T09:46:27+08:00 ] ::1 /user/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `sh_message` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sh_message` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-12-25T09:46:40+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-12-25T09:46:40+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004169s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0045s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0069s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002773s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004261s ]
+
+[ 2018-12-25T16:29:58+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004437s ]
+
+[ 2018-12-25T16:29:58+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003046s ]
+
+[ 2018-12-25T16:30:32+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.1282s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0060s ]
+
+[ 2018-12-25T16:30:39+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-12-25T16:30:39+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0233s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0079s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0087s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002610s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004724s ]
+
+[ 2018-12-25T16:30:40+08:00 ] ::1 /index/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sh_goods` WHERE ( id =2 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `sh_catagory` WHERE ( id =2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_award_log` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sh_award_log` ORDER BY id desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0073s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 AND `goods_id` = '2' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0078s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `goods_id` = '2' ORDER BY o.id desc LIMIT 60   [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Home/Controller/IndexController.class.php 第 84 行.
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-12-25T16:33:03+08:00 ] ::1 /rank/day
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0110s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,sum(goods_num) as num FROM sh_order o LEFT JOIN sh_user as u ON o.user_id = u.id  WHERE ( o.result=2 AND o.create_time >=  NOW() - interval 1 day ) GROUP BY o.user_id ORDER BY num desc LIMIT 20   [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-12-25T16:33:41+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-12-25T16:33:49+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004703s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '18146518940' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-12-25T16:33:49+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002425s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: output /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/d68a26a8dcbb03aca7905f05f89d0f15.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+
+[ 2018-12-25T16:33:49+08:00 ] ::1 /Public/Css/slick.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-25T16:34:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0080s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0073s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003630s ]
+
+[ 2018-12-25T16:35:52+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003141s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2018-12-25T16:36:03+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003374s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-12-25T16:36:09+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-12-25T16:36:09+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0099s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0109s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005941s ]
+
+[ 2018-12-25T17:45:34+08:00 ] ::1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004942s ]
+
+[ 2018-12-25T17:45:34+08:00 ] ::1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 110 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 114 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 118 行.
+NOTIC: [8] Undefined variable: btid /Users/tangyihang/Desktop/cai/夺宝备份/com_duobao_www/Application/Runtime/Cache/Home/37aa138004394f33bc9799658095e6a7.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003292s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004019s ]
+
+[ 2018-12-25T17:45:48+08:00 ] ::1 /user/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0384s ]
+SQL: SELECT * FROM `sh_user` WHERE `phone` = '13987654321' LIMIT 1   [ RunTime:0.0073s ]
+
+[ 2018-12-25T17:45:48+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004146s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0185s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0265s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0075s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0097s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-12-25T17:50:01+08:00 ] ::1 /?id=75.53599223378171
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+SQL: SHOW COLUMNS FROM `sh_set` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `sh_set` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sh_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `sh_catagory` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `sh_catagory`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sh_goods` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sh_goods`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0086s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sh_order` [ RunTime:0.0086s ]
+SQL: SELECT u.nickname,u.headimgurl,u.phone,o.goods_name,o.goods_num,o.create_time FROM sh_order as o INNER JOIN sh_user as u ON u.id = o.user_id  WHERE `pay_status` = 1 AND `result` = 2 ORDER BY o.id desc LIMIT 60   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001648s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002578s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002459s ]
+

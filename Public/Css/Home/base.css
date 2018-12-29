@@ -1,0 +1,128 @@
+*{font-family:"MicroSoft Yahei"}
+a, a:hover, a:link, a:visited{color:#101010;font-size:1.5rem; text-decoration:none;}
+/*width*/
+.width-100{width:100%;}
+.width-2r{width:2rem;}
+.width-2p5r{width:2.5rem;}
+.width-3r{width:3rem;}
+.width-4r{width:4rem;}
+.width-7r{width:7rem;}
+.width-14r{width:14rem;}
+/*height*/
+.height-100{height:100%;}
+.height-1r{height:1rem;}
+.height-3p5{height:3.5rem;}
+.height-17r{height:17rem;}
+.height-24r{height:24rem;}
+.height-26r{height:26rem;}
+.height-30r{height:30rem;}
+/*padding*/
+.padding-2{padding:2rem;}
+.padding-top-1{padding-top:1rem;}
+.padding-top-1p5{padding-top:1.5rem;}
+.padding-bottom-p75{padding-bottom:0.75rem;}
+.padding-bottom-1{padding-bottom:1rem;}
+.padding-bottom-2{padding-bottom:2rem;}
+.padding-bottom-3{padding-bottom:3rem;}
+.padding-bottom-5{padding-bottom:5rem;}
+.padding-left-p8{padding-left:0.8rem;}
+.padding-left-1{padding-left:1rem;}
+.padding-left-1p5{padding-left:1.5rem;}
+.padding-left-3{padding-left:3rem;}
+.padding-right-1{padding-right:1rem;}
+.padding-right-1p5{padding-right:1.5rem;}
+.padding-right-3{padding-right:3rem;}
+.padding-0{padding:0px;}
+
+/*color*/
+.gray{color:#828182;}
+.blue{color:#3AC1EE !important;}
+.orange{color:#FD5722;}
+.white{color:#FFF !important;}
+.yello-orange{color:#FF9800;}
+
+/*align*/
+.aright { text-align: right;}
+.aleft { text-align: left;}
+.acenter { text-align: center;}
+/*font-size*/
+.font-size-1p3{font-size:1.3rem !important;}
+.font-size-1p5{font-size:1.5rem !important;}
+.font-size-1p7{font-size:1.7rem !important;}
+.font-weight-800{font-weight:800 !important;}
+
+/*line-height*/
+.line-height-1{line-height:1rem;}
+.line-height-1p5{line-height:1.5rem;}
+.line-height-2h5{line-height:2.5rem;}
+.line-height-3{line-height:3rem;}
+.line-height-4{line-height:4rem;}
+.line-height-4p5{line-height:4.5rem;}
+.line-height-5{line-height:5rem;}
+/*margin*/
+.margin-0{margin:0px;}
+.margin-left-1{margin-left:1rem;}
+.margin-left-1p5{margin-left:1.5rem;}
+.margin-right-1{margin-right:1rem;}
+.margin-right-1p5{margin-right:1.5rem;}
+.margin-top-p65{margin-top:0.65rem;}
+.margin-top-1{margin-top:1rem;}
+.margin-top-1p2{margin-top:1.2rem;}
+.margin-top-1p5{margin-top:1.5rem;}
+.margin-top-3{margin-top:3rem;}
+.margin-bottom-1{margin-bottom:1rem;}
+.margin-bottom-2{margin-bottom:2rem;}
+.margin-bottom-1p5{margin-bottom:1.5rem;}
+/*border*/
+.border-bottom{border-bottom:1px solid #F2F2F2;}
+.border-bottom-gray{border-bottom:1px solid #E2E2E2;}
+.border-bottom-blue-3{border-bottom:3px solid #3AC1EE;}
+.border-left-gray{border-left:1px solid #E2E2E2;}
+.border-right-gray{border-right:1px solid #E2E2E2;}
+.border-top{border-top:1px solid #F2F2F2;}
+.border{border:1px solid #E2E2E2;}
+.border-top-left-radius{border-top-left-radius:1rem 1rem;}
+.border-top-right-radius{border-top-right-radius:1rem 1rem;}
+.border-bottom-left-radius{border-bottom-left-radius:1rem 1rem;}
+.border-bottom-right-radius{border-bottom-right-radius:1rem 1rem;}
+.border-right-white{border-right:1px solid #FFF;}
+.border-1-white{border:1px solid #FFF;}
+
+/*position*/
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+/*common*/
+.user-menu{position:fixed;bottom:0px;left:0px;background:#FFFFFF;width:100%;}
+.menu-ico i{width:2.2rem;margin-top:0.5rem;}
+.user-active{color:#3AC1EE;}
+.form-input{border:none;outline:none;line-height:2rem;}
+.form-select{border:none;appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;background: url("../../Images/User/ic_xialajiantou.png") no-repeat scroll right center transparent;background-size:2rem 2rem;padding-right: 1rem;}
+.nowrap{white-space:nowrap;overflow:hidden;}
+.loading{position:fixed;left:0px;top:0px;width:100%;height:1000px;text-align:center;background:#FFF;opacity:0.7;display:none;}
+.loading img{margin-top:50%;}
+/*bg*/
+.bg-light-gray{background:#FAFAFA;}
+.bg-deep-gray{background:#B3B5B5;}
+.bg-gray{background:#F2F2F2;}
+.bg-white{background:#FFF;}
+.bg-blue{background:#3AC1EE;}
+.bg-yellow { background:#ffab03;}
+
+@media screen and (max-width:380px){
+  #top_one { height: 22rem !important;}
+}
+@media screen and (max-width:340px){
+  #top_one { height: 19rem !important;}
+  .media1 {  line-height:3.5rem !important;}
+  .media1 input { height:3rem; padding-bottom:0;
+    padding-top:0;}
+  #reg {
+    line-height:3rem;
+    margin-top:0.5rem;
+  }
+  .mediabtn {
+    margin-top:0.3rem !important;
+  }
+}

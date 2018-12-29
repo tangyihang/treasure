@@ -1,0 +1,5 @@
+.p-title{height:4rem; overflow:hidden;font-size:1.6rem;font-weight:500;line-height:3rem;margin-left:0.3rem;}
+.p-con{height:4rem; overflow:hidden;line-height:2rem;margin-top:-0.75rem;}
+.p-price{color:#FF5722;font-weight:500;font-size:1.6rem;}
+.product-con div:nth-child(1n){padding-left:0.8rem;padding-right:0.4rem;margin-bottom:0.4rem;}
+.product-con div:nth-child(2n){padding-left:0.4rem;padding-right:0.8rem;margin-bottom:0.4rem;}
