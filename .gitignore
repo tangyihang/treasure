@@ -1,3 +1,4 @@
 .idea/*
 .idea/vcs.xml
-
+Application/Runtime/Cache/Admin/*.php
+Application/Runtime/*
