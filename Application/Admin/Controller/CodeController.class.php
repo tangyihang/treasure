@@ -75,7 +75,7 @@ class CodeController extends BaseController
             $result = $modelGoods->add($r);
 
             if ($result) {
-                $this->error('夺宝充值转账二维码添加成功！');
+                $this->success('夺宝充值转账二维码添加成功！', '/Admin/Code/read');
                 exit;
             }
 

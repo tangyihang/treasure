@@ -76,6 +76,9 @@
             <div class="col-lg-12 pd0 nav-bk <eq name='access' value='q'>navcur</eq>">
                 <a href="/Admin/Code/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>二维码设置</a>
             </div>
+            <div class="col-lg-12 pd0 nav-bk <eq name='access' value='qc'>navcur</eq>">
+                <a href="/Admin/recharge/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>二维码充值订单</a>
+            </div>
             <div class="col-lg-12 pd0 nav-bk <eq name='access' value='y'>navcur</eq>">
                 <a href="/Admin/points/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>充值订单</a>
             </div>
