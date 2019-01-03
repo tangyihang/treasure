@@ -77,6 +77,24 @@ class RechargeController extends BaseController
     }
 
     /**
+     * 获取充值信息
+     */
+    public function getRecharge(){
+        $model = M('recharge');
+        $data = $model->where(array('state' => 0, 'isDelete' => 2))->find();
+        if ($data) {
+            $this->ajaxReturn(array(
+                'flag'    => true,
+                'message' => '有新的充值请求需要处理',
+                'buttons' => '前往处理:goToDealWithRecharge|忽略:defaultCloseModal',
+            ));
+        }
+        $this->ajaxReturn(array(
+            'flag'    => false
+        ));
+    }
+
+    /**
      * 到账处理
      */
     public function action()

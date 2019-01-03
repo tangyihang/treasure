@@ -14,7 +14,8 @@
     <script type="text/javascript" src="/Public/Js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
     <script src="__PUBLIC__/qiniu_ueditor/ueditor.config.js"></script>
     <script src="__PUBLIC__/qiniu_ueditor/ueditor.all.min.js"></script>
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <title>管理员后台</title>
 </head>
@@ -77,7 +78,7 @@
                 <a href="/Admin/Code/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>二维码设置</a>
             </div>
             <div class="col-lg-12 pd0 nav-bk <eq name='access' value='qc'>navcur</eq>">
-                <a href="/Admin/recharge/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>二维码充值订单</a>
+                <a href="/Admin/recharge/read" id="recharge_order"><span class="glyphicon glyphicon-user pr15 pl15"></span>二维码充值订单</a>
             </div>
             <div class="col-lg-12 pd0 nav-bk <eq name='access' value='y'>navcur</eq>">
                 <a href="/Admin/points/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>充值订单</a>
