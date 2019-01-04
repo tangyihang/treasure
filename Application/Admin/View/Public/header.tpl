@@ -14,8 +14,8 @@
     <script type="text/javascript" src="/Public/Js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
     <script src="__PUBLIC__/qiniu_ueditor/ueditor.config.js"></script>
     <script src="__PUBLIC__/qiniu_ueditor/ueditor.all.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/Public/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="/Public/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 
     <title>管理员后台</title>
 </head>

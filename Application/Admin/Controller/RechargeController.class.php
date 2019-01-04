@@ -81,12 +81,12 @@ class RechargeController extends BaseController
      */
     public function getRecharge(){
         $model = M('recharge');
-        $data = $model->where(array('state' => 0, 'isDelete' => 2))->find();
+        $data = $model->where(array('state' => 0, 'isDelete' => 2, 'isignore' => 0))->find();
         if ($data) {
             $this->ajaxReturn(array(
                 'flag'    => true,
                 'message' => '有新的充值请求需要处理',
-                'buttons' => '前往处理:goToDealWithRecharge|忽略:defaultCloseModal',
+                'data_id' => $data['id'],
             ));
         }
         $this->ajaxReturn(array(
@@ -159,6 +159,22 @@ class RechargeController extends BaseController
         }
 
 
+    }
+
+    /**
+     * 不在提醒
+     */
+    public function ignore()
+    {
+
+        $id = I('get.id');
+        $modelRecharge = M('recharge');
+        $result = $modelRecharge->save(array('id' => $id, 'isignore' => 1));
+
+        $this->ajaxReturn(array(
+            'flag'    => true,
+            'message' => '忽略成功'
+        ));
     }
 
     /**

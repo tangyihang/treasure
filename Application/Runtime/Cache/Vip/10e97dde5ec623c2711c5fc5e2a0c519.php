@@ -126,7 +126,7 @@ $(".jump").on('tap',function(){
 		url: url, 
 	});
 	
-})
+});
 </script>
 <div class="footer">
 	<div class="footer_list clearfix">

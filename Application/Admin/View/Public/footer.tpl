@@ -10,8 +10,8 @@
     }
   }
 
-  function defaultCloseModal() {
-    $(this).dialog('destroy');
+  function ignoreCloseModal(id) {
+    $.get('/admin/Recharge/ignore', {id:id});
   }
 
   function goToDealWithRecharge() {
@@ -26,22 +26,27 @@
           playVoice('/Public/Flash/tishi.wav', 'container');
           if (!tip.flag) return;
 
-          var buttons = [];
-          tip.buttons.split('|').forEach(function (button) {
-            button = button.split(':');
-            buttons.push({text:button[0], click:window[button[1]]});
-          });
-
-          console.log(buttons);
           $('<div>').append(tip.message).dialog({
             position: { my: "right top", at: "right bottom" },
             minHeight: 40,
             title: '系统提示',
-            buttons: buttons
+            buttons: [
+              {
+                text: "前往处理",
+                click: window.goToDealWithRecharge
+              },
+              {
+                text: "忽略",
+                click: function() {
+                  ignoreCloseModal(tip.data_id);
+                  $(this).dialog('destroy');
+                }
+              }
+            ]
           });
         }
       })
-    }, 10000);
+    }, 30000);
   });
 </script>
 </body>
