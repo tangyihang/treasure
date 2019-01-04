@@ -76,8 +76,33 @@ class RechargeController extends BaseController
         // 获取图片连接信息
         $response['code'] = 11;
         $response['info'] = $codeInfo['code_img'];
+        $response['recharge_id'] = $result;
         echo json_encode($response);
         exit;
+    }
+
+    /**
+     * 取消充值记录
+     */
+    public function remove(){
+        // 只能取消本人的充值记录
+        $id = I('post.id');
+        $modelRecharge = M('recharge');
+        $result = $modelRecharge->where(array('id'=> $id, 'user_id'=> $this->uid['id']))->find();
+        if ($result) {
+            $modelRecharge->save(array('id' => $id, 'isDelete' => 1));
+
+            $this->ajaxReturn(array(
+                'flag'    => true,
+                'message' => '取消成功'
+            ));
+        } else {
+            $this->ajaxReturn(array(
+                'flag'    => false,
+                'message' => '取消失败'
+            ));
+        }
+
     }
 
     /**
