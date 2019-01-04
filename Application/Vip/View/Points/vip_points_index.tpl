@@ -6,7 +6,7 @@
 
         <!-- 顶部开始 -->
         <div class="mui-col-sm-12 mui-col-xs-12 mui-text-center" style="padding:3rem 2rem;">
-            <input type="text" name="money" id="money" placeholder="请输入充值金额，单笔金额不能超过900元">
+            <input type="text" name="money" id="money" placeholder="请输入充值金额，单笔金额不能超过2万元">
             <input type="text" name="pay_account_name" id="pay_account_name" placeholder="请输入付款账号名称">
             <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:50%;float: left;">
                 微信支付

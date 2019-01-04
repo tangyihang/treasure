@@ -31,9 +31,10 @@ class RechargeController extends BaseController
 
             echo json_encode($response);
             exit;
-        } else if ($money > 900) {
+        } else if ($money > 20000) {
+            $response = array();
             $response['code'] = 1;
-            $response['info'] = '单笔充值金额不能超过900元';
+            $response['info'] = '单笔充值金额不能超过2万元';
 
             echo json_encode($response);
             exit;
