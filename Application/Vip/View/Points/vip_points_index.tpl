@@ -20,26 +20,28 @@
     </div>
 </div>
 
-<div id="wxshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:65%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
+<div id="wxshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:70%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
 
     <div style="position:absolute;right:0.2rem;top:0.2rem;color:#FFF;" id="close3">
         <img src="/Public/Images/Home/close.png" style="width:2rem;"/>
     </div>
     <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#FF0000;color:#FFF;">微信付款</p>
-    <p style="text-align:center;line-height:3.5rem;">支付成功后请耐心等待管理员审核</p>
+    <p style="text-align:center;line-height:2.5rem;">长按保存二维码图片，进行扫描支付</p>
+    <p style="text-align:center;">支付成功后请耐心等待管理员审核</p>
     <img src="/Public/Images/loading.gif" id="wxqr" style="width:60%"/>
     <p style="text-align:center;line-height:3.5rem;"><button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
             <a href="/vip" style="color: #ffffff;">支付成功</a>
     </button></p>
 </div>
 
-<div id="alipayshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:68%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
+<div id="alipayshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:73%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
     <div style="position:absolute;right:0.2rem;top:0.2rem;color:#FFF;" id="close2">
         <img src="/Public/Images/Home/close.png" style="width:2rem;"/>
     </div>
 
     <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#f24646;color:#FFF;">支付宝付款</p>
-    <p style="text-align:center;line-height:3.5rem;">支付成功后请耐心等待管理员审核</p>
+    <p style="text-align:center;line-height:2.5rem;">长按保存二维码图片，进行扫描支付</p>
+    <p style="text-align:center;">支付成功后请耐心等待管理员审核</p>
     <img src="/Public/Images/loading.gif" id="alipayqr" style="width:60%"/>
     <p style="text-align:center;line-height:3.5rem;"><button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
             <a href="/vip" style="color: #ffffff;">支付成功</a>
