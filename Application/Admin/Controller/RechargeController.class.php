@@ -169,7 +169,7 @@ class RechargeController extends BaseController
 
         $id = I('get.id');
         $modelRecharge = M('recharge');
-        $result = $modelRecharge->save(array('id' => $id, 'isignore' => 1));
+        $modelRecharge->save(array('id' => $id, 'isignore' => 1));
 
         $this->ajaxReturn(array(
             'flag'    => true,
