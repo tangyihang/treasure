@@ -91,7 +91,9 @@ class RechargeController extends BaseController
         $modelRecharge = M('recharge');
         $result = $modelRecharge->where(array('id'=> $id, 'user_id'=> $this->uid['id']))->find();
         if ($result) {
-            $modelRecharge->save(array('id' => $id, 'isDelete' => 1));
+            if (!$result['state']) {
+                $modelRecharge->save(array('id' => $id, 'isDelete' => 1));
+            }
 
             $this->ajaxReturn(array(
                 'flag'    => true,
