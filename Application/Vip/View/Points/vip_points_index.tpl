@@ -7,7 +7,7 @@
         <!-- 顶部开始 -->
         <div class="mui-col-sm-12 mui-col-xs-12 mui-text-center" style="padding:3rem 2rem;">
             <input type="text" name="money" id="money" placeholder="请输入充值金额，单笔金额不能超过2万元">
-            <input type="text" name="pay_account_name" id="pay_account_name" placeholder="请输入付款账号名称">
+            <input type="text" name="pay_account_name" id="pay_account_name" placeholder="请输入付款账号的微信或支付宝昵称">
             <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:50%;float: left;">
                 微信支付
             </button>
@@ -20,40 +20,32 @@
     </div>
 </div>
 
-<div id="wxshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:70%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
-
-    <div style="position:absolute;right:0.2rem;top:0.2rem;color:#FFF;" id="close3">
-        <img src="/Public/Images/Home/close.png" style="width:2rem;"/>
-    </div>
+<div id="wxshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:65%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
     <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#FF0000;color:#FFF;">微信付款</p>
-    <p style="text-align:center;line-height:2.5rem;">长按保存二维码图片，进行扫描支付</p>
-    <p style="text-align:center;">支付成功后请耐心等待管理员审核</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;">长按保存二维码图片，进行扫描支付</p>
+    <p style="text-align:center;color: red;">支付成功后请点击已支付按钮</p>
     <img src="/Public/Images/loading.gif" id="wxqr" style="width:60%"/>
     <p style="text-align:center;line-height:3.5rem;">
-        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;">
+        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
             <a onclick="removeRecharge(0)" style="color: #ffffff;">取消</a>
         </button>
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
-            <a href="/vip" style="color: #ffffff;">支付成功</a>
+            <a href="/vip" style="color: #ffffff;">已支付</a>
         </button>
     </p>
 </div>
 
-<div id="alipayshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:73%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
-    <div style="position:absolute;right:0.2rem;top:0.2rem;color:#FFF;" id="close2">
-        <img src="/Public/Images/Home/close.png" style="width:2rem;"/>
-    </div>
-
+<div id="alipayshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:65%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
     <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#f24646;color:#FFF;">支付宝付款</p>
-    <p style="text-align:center;line-height:2.5rem;">长按保存二维码图片，进行扫描支付</p>
-    <p style="text-align:center;">支付成功后请耐心等待管理员审核</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;">长按保存二维码图片，进行扫描支付</p>
+    <p style="text-align:center;color: red;">支付成功后请点击已支付按钮</p>
     <img src="/Public/Images/loading.gif" id="alipayqr" style="width:60%"/>
     <p style="text-align:center;line-height:3.5rem;">
-        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;">
+        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
             <a onclick="removeRecharge(1)" style="color: #ffffff;">取消</a>
         </button>
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
-            <a href="/vip" style="color: #ffffff;">支付成功</a>
+            <a href="/vip" style="color: #ffffff;">已支付</a>
         </button>
     </p>
 </div>

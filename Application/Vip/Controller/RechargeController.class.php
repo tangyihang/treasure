@@ -49,7 +49,7 @@ class RechargeController extends BaseController
 
         // 获取二维码图片连接
         $modelcode = M('code');
-        $codeInfo = $modelcode->where("type={$type}")->order("RAND()")->find();
+        $codeInfo = $modelcode->where(array('type'=>$type, 'status' => 1))->order("RAND()")->find();
 
         $data = array();
 
