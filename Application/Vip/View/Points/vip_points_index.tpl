@@ -8,10 +8,10 @@
         <div class="mui-col-sm-12 mui-col-xs-12 mui-text-center" style="padding:3rem 2rem;">
             <input type="text" name="money" id="money" placeholder="请输入充值金额，单笔金额不能超过2万元">
             <input type="text" name="pay_account_name" id="pay_account_name" placeholder="请输入付款账号的微信或支付宝昵称">
-            <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:50%;float: left;">
+            <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:50%;float: left;display: none;">
                 微信支付
             </button>
-            <button type="button" class="mui-btn mui-btn-warning sub" data-type="1" style="width:50%;float: left;">
+            <button type="button" class="mui-btn mui-btn-warning sub" data-type="1" style="width:100%;float: left;">
                 支付宝支付
             </button>
             <p style="text-align: right;padding-top:2rem; line-height: 40px;"><a href="/vip/Recharge/getlist">查看充值记录</a>
