@@ -111,6 +111,16 @@ class AwardController extends Controller
         //while stop
     }
 
+    /**
+     * 修改用户可提现次数
+     */
+    public function changeWithdrawNum()
+    {
+        $modelUser = M('user');
+        $modelUser->where(1)->setField('withdraw_num', 2);
+        return true;
+    }
+
 
     //获奖结果处理
     private function _perfomMax($data)
