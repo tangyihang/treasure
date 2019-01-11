@@ -34,6 +34,7 @@ class IndexController extends BaseController {
 		$rowMember 	 = $modelMember->where(array('id'=>$id))->find();
 		$output['tui_type'] = $rowMember['tui_type'];		
 		$output['points'] 	= $rowMember['points'];
+        $output['withdraw_num'] 	= $rowMember['withdraw_num'];
 		
 		
 		//获取今日状况

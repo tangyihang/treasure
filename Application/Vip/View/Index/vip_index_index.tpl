@@ -18,13 +18,14 @@
 	        	</div>
 	        </div>
             <div class="mui-row" style="width:100%; margin:0.3rem auto 0.8rem;">
-            	<div class="mui-col-sm-6 mui-col-xs-6  mui-text-center">
-                	<p style="font-size:13.5px;color:#666; text-align:right; padding-right:15px;"> 积分：{{$output.points}}</p>
-					
+            	<div class="mui-col-sm-4 mui-col-xs-4  mui-text-center">
+                	<p style="font-size:13.5px;color:#666; text-align:right; padding-right:15px;">积分：{{$output.points}}</p>
                 </div>
-                <div class="mui-col-sm-6 mui-col-xs-6 mui-text-center">
-                	<p style="font-size:13.5px;color:#666; text-align:left; padding-left:15px;"> 累计获胜：{{$output.count}}</p>
-					
+                <div class="mui-col-sm-4 mui-col-xs-4 mui-text-center">
+                	<p style="font-size:13.5px;color:#666; text-align:left; padding-left:15px;">累计获胜：{{$output.count}}</p>
+                </div>
+                <div class="mui-col-sm-4 mui-col-xs-4 mui-text-center">
+                    <p style="font-size:13.5px;color:#666; text-align:left; padding-left:15px;">今剩提现次数：{{$output.withdraw_num}}</p>
                 </div>
             </div>
             <div class="mui-row" style="width:50%; margin:1.1rem auto;">

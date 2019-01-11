@@ -116,11 +116,10 @@ class PointsController extends BaseController {
 
 	public function submitget()
 	{
-		$money 		= I('post.money');	
-
+		$money 		= I('post.money');
+        $response = array();
 		if($money < 20)
 		{
-			$response = array();
 			$response['code'] = 1;
 			$response['info'] = '提现金额不能小于20元';
 
@@ -131,32 +130,31 @@ class PointsController extends BaseController {
 		$modelUser = M('user');
 
 		$rowUser = $modelUser->where(array('id'=>$this->uid['id']))->find();
-		
 		if($rowUser['points'] < $money)
 		{
-			$response = array();
 			$response['code'] = 1;
 			$response['info'] = '提现金额不能大于积分余额';
-
 			echo json_encode($response);
 			exit;
-
 		}
+		if ($rowUser['withdraw_num'] <= 0) {
+            $response['code'] = 1;
+            $response['info'] = '今日剩余提现次数为0，请明日再提交提现申请';
+            echo json_encode($response);
+            exit;
+        }
 		if(empty($rowUser['bank_num']))
 		{
-			$response = array();
 			$response['code'] = 1;
 			$response['info'] = '请绑定提现银行卡号';
-
 			echo json_encode($response);
 			exit;
-
 		}
 		$modelUser->startTrans();
-			
+
 		//更新
 		$result2 = $modelUser->where(array('id'=>$rowUser['id']))->setDec('points', $money);
-
+        $result4 = $modelUser->where(array('id'=>$rowUser['id']))->setDec('withdraw_num', 1);
 
 		$dataUpdate = [];
 		$dataUpdate['before'] 	= $rowUser['points'];
@@ -170,11 +168,10 @@ class PointsController extends BaseController {
 		$result3 = $modelDetail->add($dataUpdate);
 
 
-		if($result2 && $result3)
+		if($result2 && $result3 && $result4)
 		{
 			$modelUser->commit();
 
-			$response = array();
 			$response['code'] = 1;
 			$response['info'] = '提现成功，等待客服审核';
 
