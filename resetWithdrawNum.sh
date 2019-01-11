@@ -1,3 +1,2 @@
-cd /www/wwwroot/com_duobao_www
+cd /www/wwwroot/treasure
 php index.php admin/award/resetWithdrawNum
-echo "restart process success"
