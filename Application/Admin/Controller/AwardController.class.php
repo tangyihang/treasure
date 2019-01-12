@@ -117,7 +117,7 @@ class AwardController extends Controller
     public function resetWithdrawNum()
     {
         $modelUser = M('user');
-        $modelUser->where(1)->setField('withdraw_num', 2);
+        $modelUser->where(1)->setField('withdraw_num', 3);
         var_dump(date('Y-m-d H:i:s', time()) . ' reset WithdrawNum success');
         return true;
     }
