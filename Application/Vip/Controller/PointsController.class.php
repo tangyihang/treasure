@@ -195,6 +195,7 @@ class PointsController extends BaseController {
 	{
 		$money 		= I('post.money');
 		$type		= I('post.type');
+        $pay_account_name = trim(I('post.pay_account_name'));
 
 		if($money < 1)
 		{
@@ -213,10 +214,10 @@ class PointsController extends BaseController {
             exit;
         }
 
+        // 充值订单
+        $orderId = date('ymdHis').mt_rand(10000,99999);
 		$data = array();
-
-
-		$data['order_id']	= date('ymdHis').mt_rand(10000,99999);
+		$data['order_id']	= $orderId;
 		$data['user_id']	= $this->uid['id'];
 		$data['created']	= date('Y-m-d H:i:s');
 		$data['money']		= $money;
@@ -225,7 +226,25 @@ class PointsController extends BaseController {
 		$model 	= M('points_order');
 		$result = $model->add($data);
 
-		if(empty($result))
+		// 生成二维码充值订单
+        $rechargeData = array();
+
+        $rechargeData['order_id'] = $orderId;
+        $rechargeData['user_id'] = $this->uid['id'];
+        $rechargeData['phone'] = $this->uid['phone'];
+        $rechargeData['created'] = date('Y-m-d H:i:s');
+        $rechargeData['money'] = $money;
+        $rechargeData['pay_account_name'] = $pay_account_name;
+        $rechargeData['pay_type'] = $type;
+        $rechargeData['code_id'] = 0;
+        $rechargeData['code_name'] = '支付宝自动充值';
+        $rechargeData['isignore'] = 1;  // 不提示订单
+
+        $rechargeModel = M('recharge');
+//        var_dump($rechargeData);die;
+        $result2 = $rechargeModel->add($rechargeData);
+
+		if(empty($result) || empty($result2))
 		{
 			$response = array();
 			$response['code'] = 2;
@@ -235,20 +254,12 @@ class PointsController extends BaseController {
 			exit;
 		}
 
-		
 		if($type == 0){
-			
 			//$this->_swiftpass($data['order_id'], '积分充值', $money*100);
 			$this->_swiftpass($data['order_id'], '积分充值', 1);
-			
 		}else{
-			
 			$this->_alipay($data['order_id'], '积分充值', 1);
 		}
-		
-		
-
-
 	}
 
 

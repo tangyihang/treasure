@@ -3,3 +3,4 @@
 Application/Runtime/Cache/Admin/*.php
 Application/Runtime/*
 Application/Runtime/Cache/Vip/*.php
+Public/Images/Qr/*
