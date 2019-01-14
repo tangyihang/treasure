@@ -79,6 +79,7 @@
                     <th>用户付款账号</th>
                     <th>充值金额</th>
                     <th>到账金额</th>
+                    <th>充值方式</th>
                     <th>二维码ID</th>
                     <th>到账账户</th>
                     <th>时间</th>
@@ -95,6 +96,10 @@
                     <td>{{$o.pay_account_name}}</td>
                     <td>{{$o.money}}</td>
                     <td>{{$o.rechargemoney}}</td>
+                    <td>
+                        <eq name="o.pay_type" value="0">微信</eq>
+                        <eq name="o.pay_type" value="1">支付宝</eq>
+                    </td>
                     <td>{{$o.code_id}}</td>
                     <td>{{$o.code_name}}</td>
                     <td>{{$o.created}}</td>
