@@ -105,13 +105,13 @@
                                 <a href="{{:U('Recharge/del', array('id'=>$o['id']))}}">删除</a>
                             </td>
                         </neq>
+                        <eq name="o.code_id" value="0">
+                            <td>
+                                - | -
+                            </td>
+                        </eq>
                     </eq>
                     <eq name="o.state" value="1">
-                        <td>
-                            - | -
-                        </td>
-                    </eq>
-                    <eq name="o.code_id" value="0">
                         <td>
                             - | -
                         </td>
