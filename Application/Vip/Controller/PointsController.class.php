@@ -241,7 +241,6 @@ class PointsController extends BaseController {
         $rechargeData['isignore'] = 1;  // 不提示订单
 
         $rechargeModel = M('recharge');
-//        var_dump($rechargeData);die;
         $result2 = $rechargeModel->add($rechargeData);
 
 		if(empty($result) || empty($result2))
@@ -258,7 +257,7 @@ class PointsController extends BaseController {
 			//$this->_swiftpass($data['order_id'], '积分充值', $money*100);
 			$this->_swiftpass($data['order_id'], '积分充值', 1);
 		}else{
-			$this->_alipay($data['order_id'], '积分充值', 1);
+			$this->_alipay($data['order_id'], '积分充值', 1, $result2);
 		}
 	}
 
@@ -322,7 +321,7 @@ class PointsController extends BaseController {
     }
     
     //支付宝
-    private function _alipay($order_id, $body, $fee)
+    private function _alipay($order_id, $body, $fee, $rechargeid)
     {
     	Vendor('phpqrcode.phpqrcode');
     	
@@ -359,7 +358,7 @@ class PointsController extends BaseController {
     	$response = array();
     	$response['code']		= 11;
     	$response['info']		= 'http://pk9qxycsb.bkt.clouddn.com/'.$key;
-    	
+        $response['recharge_id'] = $rechargeid;
     	echo json_encode($response);
     	exit;
     }

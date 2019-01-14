@@ -87,31 +87,47 @@
     } else {
       url = '/vip/Recharge/submit';
     }
-    $.post(url, {money:money,type:type,pay_account_name:pay_account_name}, function (response) {
+    var message = '';
+    var title = '';
+    if (type == 1) {
+      message = '请确认付款账号中输入的是您的支付宝昵称，方便管理员及时给您充值。';
+      title = '支付宝昵称';
+    } else if (type == 2) {
+      message = '请确认付款账号中输入的是您的真实姓名，方便管理员及时给您充值。';
+      title = '付款人真实姓名';
+    } else {
+      message = '请确认付款账号中输入的是您的微信昵称，方便管理员及时给您充值。';
+      title = '微信昵称';
+    }
+    mui.confirm(message, title, ['否', '是'],function(e) {
+      if (e.index == 1) {
+        $.post(url, {money:money,type:type,pay_account_name:pay_account_name}, function (response) {
 
-      if (response.code != 11) {
-        mui.alert(response.info, "提示", "确定");
+          if (response.code != 11) {
+            mui.alert(response.info, "提示", "确定");
+            mui(that).button('reset');
+            return;
+          }
+          if (type == 0) {
+            $("#wxqr").attr("src", response.info);
+
+            $("#wxshow").show();
+            $("#tip").hide();
+            mui(that).button('reset');
+          }
+          if (type == 1) {
+            $("#alipayqr").attr("src", response.info);
+
+            $("#alipayshow").show();
+            $("#tip").hide();
+            mui(that).button('reset');
+          }
+          $("#recharge_id").val(response.recharge_id);
+        }, 'json')
+      } else {
         mui(that).button('reset');
-        return;
       }
-      if (type == 0) {
-        $("#wxqr").attr("src", response.info);
-
-        $("#wxshow").show();
-        $("#tip").hide();
-        mui(that).button('reset');
-      }
-      if (type == 1) {
-        $("#alipayqr").attr("src", response.info);
-
-        $("#alipayshow").show();
-        $("#tip").hide();
-        mui(that).button('reset');
-      }
-      $("#recharge_id").val(response.recharge_id);
-    }, 'json')
-
-
+    });
   })
 
 
