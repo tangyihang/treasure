@@ -128,6 +128,12 @@ class RechargeController extends BaseController
             // 更新到账金额和到账时间
 
             $recharge = $modelRecharge->where('id = ' . $id)->find();
+            // 订单是否已到账，不要重复到账
+            if ($recharge['state'] == 1){
+                $this->error('订单已到账处理，不要重复操作！');
+                exit;
+            }
+
             $modelRecharge->save(array(
                 'id' => $id,
                 'money' => $money,
