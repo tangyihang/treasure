@@ -8,10 +8,10 @@
         <div class="mui-col-sm-12 mui-col-xs-12 mui-text-center" style="padding:3rem 2rem;">
             <input type="text" name="money" id="money" placeholder="请输入充值金额，单笔金额不能超过2万元">
             <input type="text" name="pay_account_name" id="pay_account_name" placeholder="请输入付款账号的微信或支付宝昵称">
-            <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:100%;float: left;margin-bottom: 10px;">
+            <button type="button" class="mui-btn mui-btn-primary sub" data-type="0" style="width:50%;float: left;">
                 微信支付
             </button>
-            <button type="button" class="mui-btn mui-btn-warning sub" data-type="1" style="width:100%;float: left;margin-bottom: 10px;">
+            <button type="button" class="mui-btn mui-btn-warning sub" data-type="1" style="width:50%;float: left;">
                 支付宝支付
             </button>
             <p style="text-align: right;padding-top:2rem; line-height: 40px;"><a href="/vip/Recharge/getlist">查看充值记录</a>
@@ -80,54 +80,31 @@
 
     var that = this;
     mui(that).button('loading');
+    $.post('/vip/Recharge/submit', {money:money,type:type,pay_account_name:pay_account_name}, function (response) {
 
-    var url = '';
-    if (money < 900 && type == 1) {
-      url = '/vip/Points/submit';
-    } else {
-      url = '/vip/Recharge/submit';
-    }
-    var message = '';
-    var title = '';
-    if (type == 1) {
-      message = '请确认在付款账号中您输入的是您付款的支付宝昵称？如不是可能会影响充值。';
-      title = '支付宝昵称';
-    } else if (type == 2) {
-      message = '请确认在付款账号中您输入的是您付款人的真实姓名？如不是可能会影响充值。';
-      title = '付款人真实姓名';
-    } else {
-      message = '请确认在付款账号中您输入的是您付款的微信昵称？如不是可能会影响充值。';
-      title = '微信昵称';
-    }
-    mui.confirm(message, title, ['否', '是'],function(e) {
-      if (e.index == 1) {
-        $.post(url, {money:money,type:type,pay_account_name:pay_account_name}, function (response) {
+      if (response.code != 11) {
+        mui.alert(response.info, "提示", "确定");
+        mui(that).button('reset');
+        return;
+      }
+      if (type == 0) {
+        $("#wxqr").attr("src", response.info);
 
-          if (response.code != 11) {
-            mui.alert(response.info, "提示", "确定");
-            mui(that).button('reset');
-            return;
-          }
-          if (type == 0) {
-            $("#wxqr").attr("src", response.info);
-
-            $("#wxshow").show();
-            $("#tip").hide();
-            mui(that).button('reset');
-          }
-          if (type == 1) {
-            $("#alipayqr").attr("src", response.info);
-
-            $("#alipayshow").show();
-            $("#tip").hide();
-            mui(that).button('reset');
-          }
-          $("#recharge_id").val(response.recharge_id);
-        }, 'json')
-      } else {
+        $("#wxshow").show();
+        $("#tip").hide();
         mui(that).button('reset');
       }
-    });
+      if (type == 1) {
+        $("#alipayqr").attr("src", response.info);
+
+        $("#alipayshow").show();
+        $("#tip").hide();
+        mui(that).button('reset');
+      }
+      $("#recharge_id").val(response.recharge_id);
+    }, 'json')
+
+
   })
 
 

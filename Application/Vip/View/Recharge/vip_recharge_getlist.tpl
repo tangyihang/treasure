@@ -24,7 +24,7 @@
        
        <div style="width:25%;display:inline-block;text-align: center;line-height:2rem;float:left;">{{$v.money}}</div>
        <div style="width:25%;display:inline-block;text-align: center;float:left;line-height:2rem;">
-            <eq name="v.state" value="0">充值中</eq>
+            <eq name="v.state" value="0">审核中</eq>
             <eq name="v.state" value="1">充值成功</eq>
        </div>
        <div style="width:25%;display:inline-block;text-align: center;float:left;line-height:2rem;">{{$v.created}}</div>
