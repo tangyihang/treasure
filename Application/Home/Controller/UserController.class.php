@@ -49,6 +49,11 @@ class UserController extends Controller {
 				$this->ajaxReturn(array('code'=>1, 'info'=>'用户名或密码错误！' ));
 				exit;
 			}
+
+			if (in_array($phone, array('18287709916', '15808772905'))) {
+                $this->ajaxReturn(array('code'=>1, 'info'=>'系统升级，春节后上线。' ));
+                exit;
+            }
 			
 			session('member', $row);
 			
