@@ -1,1 +1,1 @@
-php /www/wwwroot/treasure/cli.php admin/award/resetWithdrawNum
+php /www/wwwroot/treasure_test/cli.php admin/award/resetWithdrawNum
