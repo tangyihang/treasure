@@ -6,10 +6,10 @@ return array (
 		'TMPL_TEMPLATE_SUFFIX' => '.tpl', // 视图扩展名
 		'DEFAULT_FILTER' => 'strip_tags,stripslashes,trim,strtolower',
 		'DB_TYPE' => 'mysql',
-		'DB_USER' => 'root',
-		'DB_PWD' => 'tyh456852',
+		'DB_USER' => 'db_app_test',
+		'DB_PWD' => 'esGjW1dUCq9VjCy2',
 		'DB_PREFIX' => 'sh_',
-		'DB_DSN' => 'mysql:host=127.0.0.1;dbname=com_app_www;charset=utf8',
+		'DB_DSN' => 'mysql:host=127.0.0.1;dbname=app_test;charset=utf8',
 		'TMPL_L_DELIM' => '{{',
 		'TMPL_R_DELIM' => '}}',
 		'LOAD_EXT_CONFIG' => 'const',
@@ -34,7 +34,7 @@ return array (
 				'driverConfig' 	=> array (
 						'secrectKey' 	=> 'jag9hm3XD1Qnubc3LgDXd6HCz8G6aTF_79vqbVZH',
 						'accessKey' 	=> 'x-zNaKvYyrrZLjHymq5iusSpkogZkYUwAKhARMI2',
-						'domain' 		=> 'pk9qxycsb.bkt.clouddn.com',
+						'domain' 		=> 'image.wkeid.cn',
 						'bucket' 		=> 'imgs',
 				),
 		),
