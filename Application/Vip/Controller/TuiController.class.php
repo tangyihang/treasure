@@ -458,7 +458,7 @@ class TuiController extends BaseController {
 		$id  = $this->uid['id'];
 		$modelUser = M('user');
         $rowMember = $modelUser->where(array('id'=>$id))->find();
-        $url="http://hebeissc.com/user/register/invite/".$rowMember['invite'];
+        $url="http://www.882345678.com/user/register/invite/".$rowMember['invite'];
         $level=3;  
         $size=4;  
         Vendor('phpqrcode.phpqrcode');  

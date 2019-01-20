@@ -1,6 +1,6 @@
 <?php
 //host
-define('SERVER_URL', 'http://hebeissc.com/');
+define('SERVER_URL', 'http://www.882345678.com/');
 
 //微信
 define('APPID', 'wx97066d2c0680a8ac');

@@ -23,10 +23,10 @@ $alipay_config['seller_id']	= $alipay_config['partner'];
 // MD5密钥，安全检验码，由数字和字母组成的32位字符串，查看地址：https://b.alipay.com/order/pidAndKey.htm
 $alipay_config['key']			= 'cq6expdi9npji02tn9ssvmstnr97rt1h';
 // 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-$alipay_config['notify_url'] = "http://hebeissc.com/Alipay/notify_url.php";
+$alipay_config['notify_url'] = "http://www.882345678.com/Alipay/notify_url.php";
 
 // 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-$alipay_config['return_url'] = "http://hebeissc.com/Alipay/return_url.php";
+$alipay_config['return_url'] = "http://www.882345678.com/Alipay/return_url.php";
 
 //签名方式
 $alipay_config['sign_type']    = strtoupper('MD5');
