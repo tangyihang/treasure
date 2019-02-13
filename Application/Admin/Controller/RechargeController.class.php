@@ -35,9 +35,11 @@ class RechargeController extends BaseController
         $startime2 = date('Y-m-d') . ' 00:00:00';
         $endtime2 = date('Y-m-d') . ' 23:59:59';
         $where = array();
+        $sqlWhere = '(code_id != 0  OR (code_id = 0 and state=1)) and isDelete = 2';
 
         if (!empty($phone)) {
             $where['phone'] = $phone;
+            $sqlWhere .= " and phone='$phone'";
         }
 
         $where['isDelete'] = 2;
@@ -46,16 +48,16 @@ class RechargeController extends BaseController
             $this->assign('end', $endtime);
 
             $where['created'] = array(array('EGT', $startime), array('ELT', $endtime));
+            $sqlWhere .= " and created<='$endtime' and created >='$startime'";
         }
 
-
         $model = M('recharge');
-        $memberRows = $model->where($where)
+        $memberRows = $model->where($sqlWhere)
             ->order('sh_recharge.created desc')
             ->page($p, $pageSize)->select();
 
-        $memberCount = $model->where($where)->count();
-        $memberSum = $model->where($where)
+        $memberCount = $model->where($sqlWhere)->count();
+        $memberSum = $model->where($sqlWhere)
             ->sum('rechargeMoney');
 
         $where2['isDelete'] = 2;

@@ -84,6 +84,9 @@ if($verify_result) {//验证成功
     	//更新支付状态
     	$sql = "UPDATE sh_points_order SET pay_status = 1 , pay_time='{$time}' WHERE order_id = '{$out_trade_no}'";
     	$conn->query($sql);
+
+        $sql = "UPDATE sh_recharge SET state = 1 , rechargeTime='{$time}', rechargeMoney='{$row['money']}' WHERE order_id = '{$out_trade_no}'";
+        $conn->query($sql);
     	
     	//更新数据
     	$sql = "UPDATE sh_user SET points = points + '{$row['money']}' WHERE id = '{$row['user_id']}'";
