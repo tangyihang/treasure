@@ -73,8 +73,6 @@
   }
   //pay
   $(".sub").click(function () {
-    mui.alert('系统维护中！', "提示", "确定");
-    return;
 
     var money = $("#money").val();
     var pay_account_name = $("#pay_account_name").val();
