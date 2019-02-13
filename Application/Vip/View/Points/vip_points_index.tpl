@@ -25,6 +25,8 @@
     <p style="text-align:center;line-height:2.5rem;color: red;">长按保存二维码图片，进行扫描支付</p>
     <p style="text-align:center;color: red;">支付成功后请点击已支付按钮</p>
     <img src="/Public/Images/loading.gif" id="wxqr" style="width:60%"/>
+    <p style="text-align:center;line-height:2.5rem;color: red;">二维码60秒内支付有效</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;">填写金额和支付金额要一致，不然会影响到账</p>
     <p style="text-align:center;line-height:3.5rem;">
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
             <a onclick="removeRecharge(0)" style="color: #ffffff;">取消</a>
@@ -40,6 +42,8 @@
     <p style="text-align:center;line-height:2.5rem;color: red;">长按保存二维码图片，进行扫描支付</p>
     <p style="text-align:center;color: red;">支付成功后请点击已支付按钮</p>
     <img src="/Public/Images/loading.gif" id="alipayqr" style="width:60%"/>
+    <p style="text-align:center;line-height:2.5rem;color: red;">二维码60秒内支付有效</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;" id="alipay_tishi">填写金额和支付金额要一致，不然会影响到账</p>
     <p style="text-align:center;line-height:3.5rem;">
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
             <a onclick="removeRecharge(1)" style="color: #ffffff;">取消</a>
@@ -119,6 +123,11 @@
             $("#alipayqr").attr("src", response.info);
 
             $("#alipayshow").show();
+            if (money < 900) {
+              $("#alipay_tishi").hide();
+            } else {
+              $("#alipay_tishi").show();
+            }
             $("#tip").hide();
             mui(that).button('reset');
           }
