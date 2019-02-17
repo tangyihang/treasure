@@ -163,6 +163,11 @@ class OrderController extends BaseController {
     		echo json_encode($response);
     		exit;
     	}
+    	if ($goods_num <= 0) {
+            $response = array('code'=>1,'info'=>'订单数必须大于0！');
+            echo json_encode($response);
+            exit;
+        }
     	
     	$modelGoods = D('goods');
     	$modelCata 	= D('catagory');
