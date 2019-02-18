@@ -115,7 +115,7 @@
 
     var data = ' <div class="mui-row" style="margin-top:0.5rem;">' +
       '<div class="mui-col-sm-3 mui-col-xs-3 mui-text-center" style="line-height:2rem;padding-left:1rem;color:#f24646;">' +
-      '<img src="' + headimgurl + '" style="width:2rem;" >' +
+      '<img src="' + headimgurl + '" style="width:2rem;height:2rem;" >' +
       '</div>' +
       '<div class="mui-col-sm-3 mui-col-xs-3 mui-text-center mui-ellipsis" style="line-height:2rem;color:#f24646;">' + nickname +
       '</div>' +
