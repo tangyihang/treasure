@@ -88,7 +88,13 @@ class UserController extends Controller {
 			$code = I('post.member_code');
 						
 			$where['phone'] = I('post.member_phone');
-			
+
+            $VailData = new \Darling\VailData\VailData();
+            if (!$VailData->is_phone($where['phone'])) {
+                $data['code'] = 1;
+                $data['info'] = '手机号有误！';
+                $this->ajaxReturn($data);
+            }
 			//获取手机号 和 对应的验证码信息
 //			$Message 	= M('message');
 //			$rowMessage = $Message->where($where)->find();
