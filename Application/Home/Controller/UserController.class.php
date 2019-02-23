@@ -90,29 +90,29 @@ class UserController extends Controller {
 			$where['phone'] = I('post.member_phone');
 			
 			//获取手机号 和 对应的验证码信息
-			$Message 	= M('message');
-			$rowMessage = $Message->where($where)->find();
-			
-			//如果手机验证错误次数超过10锁定
-			if ($rowMessage['time_error'] >= 10) {
-				$this->ajaxReturn(array('code'=>1, 'info'=>'手机号已锁定,请联系官方客服！' ));
-			}
-			//如果为空错误
-			if ($rowMessage['code'] != $code) {
-				//验证码输入错误，更新手机错误次数
-				$Message->where('phone=' . $where['phone'])->setInc('time_error');
-				$this->ajaxReturn(array('code'=>2, 'info'=>'短信验证码错误,请重试！' ));
-			}
-			
-			//判断验证码是否已经使用
-			if ($rowMessage['is_used'] == 1) {
-				$this->ajaxReturn(array('code'=>3, 'info'=>'短信验已使用，请重新获取！' ));
-			}
-			
-			//判断验证码是否过期
-			if (time() - $rowMessage['time'] >= 300) {
-				$this->ajaxReturn(array('code'=>3, 'info'=>'验证码已过期，请重新获取！' ));
-			}
+//			$Message 	= M('message');
+//			$rowMessage = $Message->where($where)->find();
+//
+//			//如果手机验证错误次数超过10锁定
+//			if ($rowMessage['time_error'] >= 10) {
+//				$this->ajaxReturn(array('code'=>1, 'info'=>'手机号已锁定,请联系官方客服！' ));
+//			}
+//			//如果为空错误
+//			if ($rowMessage['code'] != $code) {
+//				//验证码输入错误，更新手机错误次数
+//				$Message->where('phone=' . $where['phone'])->setInc('time_error');
+//				$this->ajaxReturn(array('code'=>2, 'info'=>'短信验证码错误,请重试！' ));
+//			}
+//
+//			//判断验证码是否已经使用
+//			if ($rowMessage['is_used'] == 1) {
+//				$this->ajaxReturn(array('code'=>3, 'info'=>'短信验已使用，请重新获取！' ));
+//			}
+//
+//			//判断验证码是否过期
+//			if (time() - $rowMessage['time'] >= 300) {
+//				$this->ajaxReturn(array('code'=>3, 'info'=>'验证码已过期，请重新获取！' ));
+//			}
 			
 			
 			$Member = M('user');
@@ -154,9 +154,9 @@ class UserController extends Controller {
 			
 			if ($result) {		
 				//注册成功，更新验证码状态为已使用
-				$dataM['id'] 		= $rowMessage['id'];
-				$dataM['is_used'] 	= 1;
-				$Message->save($dataM);
+//				$dataM['id'] 		= $rowMessage['id'];
+//				$dataM['is_used'] 	= 1;
+//				$Message->save($dataM);
 				
 				$this->ajaxReturn(array('code'=>11, 'info'=>'认证成功！' ));
 				

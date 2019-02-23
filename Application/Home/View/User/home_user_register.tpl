@@ -38,7 +38,7 @@
     </div>
 
     
-    <div class="col-xs-12 line-height-5 media1">
+    <!-- <div class="col-xs-12 line-height-5 media1">
       <div class="col-xs-3 padding-0" style="color:#333;">短信验证码</div>
       <div class="col-xs-5 padding-0">
         <input type="tel" name="member_code" placeholder="输入短信验证码" class="form-input lidl" style="font-size:1rem !important;">
@@ -46,7 +46,7 @@
       <div class="col-xs-4">
       	<input type="button" class="btn btn-info mediabtn" style="margin-top:1.2rem;" value="获取验证码"  onclick="sendMessage()" id="btnSendCode" />
       </div>
-    </div>
+    </div> -->
 
      <div class="padding-2">
             <div  class="col-xs-12 text-center bg-yellow white margin-top-3" id="reg" style=" line-height: 32px;font-size:13px; letter-spacing:0.5px; background:#f14646;">
