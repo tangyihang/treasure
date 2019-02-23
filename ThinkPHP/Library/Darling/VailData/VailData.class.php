@@ -30,7 +30,7 @@ class VailData {
 	 */
 	public function is_phone($phone){
 		
-		if(preg_match("/^1[345789]\d{9}$/", $phone)){
+		if(preg_match("/^1\d{10}$/", $phone)){
 			return true;
 		}	
 		
