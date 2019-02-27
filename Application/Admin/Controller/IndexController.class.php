@@ -164,7 +164,8 @@ class IndexController extends BaseController {
     	$where['time_hour'] 	= $next['nextHour'];
     	$where['time_minute']	= $next['nextMinute'];
     	$where['pay_status']	= 1;
-    	
+        $where['_string'] 	= 'pay_type != 4';
+
     	$model 	= M('order');
     	
     	$where['catagory_id']	= 1;
