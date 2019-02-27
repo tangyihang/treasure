@@ -311,6 +311,11 @@ class SnatchController extends BaseController {
 			$this->error('兑奖记录不存在');
 			exit;
 		}
+		// 限制自动下单订单进行兑奖
+		if ($row['pay_type'] == 4) {
+            $this->error('兑奖失败');
+            exit;
+        }
 		
 		$cid = $row['catagory_id'];
 		$modelCata = M('catagory');
