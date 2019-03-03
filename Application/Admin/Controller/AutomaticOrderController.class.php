@@ -30,7 +30,7 @@ class AutomaticOrderController extends Controller
 
             //查看当前期数是否有下单记录
             $modelOrder = M('order');
-            $orderAll = $modelOrder->where(array('pay_type' => 4, 'phase' => $phase))->find();
+            $orderAll = $modelOrder->where(array('pay_type' => 4, 'phase' => $phase, 'time_day' => $arr['day']))->find();
 
             //当前期数没有自动生成记录，则自动生成下单数据
             if (empty($orderAll)) {
