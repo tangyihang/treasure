@@ -50,8 +50,8 @@ class AutomaticOrderController extends Controller
      */
     private function _getRandomUsers()
     {
-        // 随机用户数为 6-10 个
-        $userNum = mt_rand(6,10);
+        // 随机用户数为 3-6 个
+        $userNum = mt_rand(3,6);
         // 从表中获取随机用户手机号
         $modelAutomaticUser = M('automatic_user');
         $rowAll = $modelAutomaticUser->query("SELECT * FROM sh_automatic_user ORDER BY rand() LIMIT $userNum;");
