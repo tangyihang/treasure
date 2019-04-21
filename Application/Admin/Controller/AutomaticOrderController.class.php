@@ -19,10 +19,10 @@ class AutomaticOrderController extends Controller
             //2:00-9:59循环
             $nowHour = date('H');
 
-//            if ($nowHour < 10 && $nowHour > 1) {
-//                sleep(30);
-//                continue;
-//            }
+            if ($nowHour < 10 && $nowHour > 1) {
+                sleep(30);
+                continue;
+            }
 
             $modelSet	= M('automatic_set');
             $orderSet = $modelSet->find();
