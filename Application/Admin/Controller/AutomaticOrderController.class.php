@@ -24,6 +24,14 @@ class AutomaticOrderController extends Controller
                 continue;
             }
 
+            $modelSet	= M('automatic_set');
+            $orderSet = $modelSet->find();
+
+            if ($orderSet['isstart'] == 2) {
+                sleep(60);
+                continue;
+            }
+
             $arr = getNowDate();
             //获取第几期
             $phase = $this->getByHourAndMinute($arr['nextHour'], $arr['nextMinute']);
@@ -34,10 +42,13 @@ class AutomaticOrderController extends Controller
 
             //当前期数没有自动生成记录，则自动生成下单数据
             if (empty($orderAll)) {
-                $users = $this->_getRandomUsers();
+                // 随机用户数为 3-6 个
+                $userNum = mt_rand($orderSet['user_bottom'],$orderSet['user_top']);
+                $users = $this->_getRandomUsers($userNum);
                 foreach ($users as $val) {
-                    $this->_submitOrder($val['user_id']);
-                    sleep(mt_rand(20,50));
+                    $goods_num = mt_rand($orderSet['order_bottom'],$orderSet['order_top']);// 订单个数随机为1-10
+                    $this->_submitOrder($val['user_id'], $goods_num);
+                    sleep(mt_rand($orderSet['time_bottom'],$orderSet['time_top']));
                 }
             }
             sleep(30);
@@ -48,10 +59,8 @@ class AutomaticOrderController extends Controller
     /**
      * 获取随机的用户
      */
-    private function _getRandomUsers()
+    private function _getRandomUsers($userNum)
     {
-        // 随机用户数为 3-6 个
-        $userNum = mt_rand(3,6);
         // 从表中获取随机用户手机号
         $modelAutomaticUser = M('automatic_user');
         $rowAll = $modelAutomaticUser->query("SELECT * FROM sh_automatic_user ORDER BY rand() LIMIT $userNum;");
@@ -61,9 +70,8 @@ class AutomaticOrderController extends Controller
     /**
      * 生成订单
      */
-    private function _submitOrder($user_id){
+    private function _submitOrder($user_id, $goods_num){
         $goods_id 		= mt_rand(1,3);// 商品随机1-3  20，50，100
-        $goods_num		= mt_rand(1,10);// 订单个数随机为1-10
         $snatch_type	= mt_rand(1,2);// 分类随机为：大小
         $pay_type = 4; //自动购买
 

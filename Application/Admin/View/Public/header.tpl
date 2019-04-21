@@ -95,6 +95,9 @@
                     <a href="/Admin/setAward/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>设奖记录</a>
                 </div>
             </neq>
+            <div class="col-lg-12 pd0 nav-bk <eq name='access' value='zd'>navcur</eq>">
+                <a href="/Admin/Set/automatic"><span class="glyphicon glyphicon-user pr15 pl15"></span>自动下单设置</a>
+            </div>
             <div class="col-lg-12 pd0 nav-bk <eq name='access' value='g'>navcur</eq>">
                 <a href="/Admin/Set/read"><span class="glyphicon glyphicon-user pr15 pl15"></span>系统设置</a>
             </div>
