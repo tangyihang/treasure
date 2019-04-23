@@ -308,8 +308,8 @@ $(".db-num").click(function(){
 
 //pay
 $(".sub").click(function(){
-	mui.alert('请提现，系统即日开始升级！', "提示", "确定");
-    return;
+//	mui.alert('请提现，系统即日开始升级！', "提示", "确定");
+//    return;
 	var pay_type = $(this).data('pay');
 	var num = $("#goods_num").val();
 	var that = this;
