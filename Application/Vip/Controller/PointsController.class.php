@@ -357,7 +357,7 @@ class PointsController extends BaseController {
     	
     	$response = array();
     	$response['code']		= 11;
-    	$response['info']		= 'http://image.wkeid.cn/'.$key;
+    	$response['info']		= 'https://image.wkeid.cn/'.$key;
         $response['recharge_id'] = $rechargeid;
     	echo json_encode($response);
     	exit;
