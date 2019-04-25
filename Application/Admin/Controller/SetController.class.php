@@ -94,8 +94,7 @@ class SetController extends BaseController
                 // 更新进入自动下单的用户
                 $result3 = $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
             } else {
-                // 更新不进入自动下单的用户
-                $result2 = $modelUser->execute("update sh_automatic_user set isstart = 2");
+                $this->error('自动下单用户不能为空，提交失败');
             }
 
             if (empty($r['user_bottom']) ||
