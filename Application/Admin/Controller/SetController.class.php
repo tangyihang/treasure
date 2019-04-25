@@ -88,9 +88,9 @@ class SetController extends BaseController
             $users = I('post.users');
             $ids = implode(',', $users);
             // 更新不进入自动下单的用户
-            $modelUser->execute("update sh_automatic_user set isstart = 2 where user_id not in ($ids)");
+            $result2 = $modelUser->execute("update sh_automatic_user set isstart = 2 where user_id not in ($ids)");
             // 更新进入自动下单的用户
-            $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
+            $result3 = $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
 
             if (empty($r['user_bottom']) ||
                 empty($r['user_top']) ||
@@ -101,7 +101,7 @@ class SetController extends BaseController
                 $this->error('上下限区间不能为空，提交失败');
             }
             $result = $modelSet->where(1)->save($r);
-            if($result)
+            if($result || $result2 || $result3)
             {
                 $this->success('更新成功', '/Admin/Set/automatic');
                 exit;
