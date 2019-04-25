@@ -63,11 +63,14 @@ class SetController extends BaseController
         $this->assign('access', 'zd');
         $this->assign('position', '自动下单设置');
         $modelSet			= M('automatic_set');
+        $modelUser			= M('automatic_user');
 
         if(IS_GET)
         {
             $output['rowSet'] 	= $modelSet->find();
+            $users 	= $modelSet->query('select a.user_id, b.nickname, a.isstart from sh_automatic_user as a left join sh_user as b on a.user_id = b.id');
             $this->assign('output', $output);
+            $this->assign('users', $users);
             $this->display('admin_set_automatic');
         }
 
@@ -81,6 +84,13 @@ class SetController extends BaseController
             $r['time_bottom']	= I('post.time_bottom');
             $r['time_top']	= I('post.time_top');
             $r['isstart']	= I('post.isstart');
+            // 更新自动下单用户
+            $users = I('post.users');
+            $ids = implode(',', $users);
+            // 更新不进入自动下单的用户
+            $modelUser->execute("update sh_automatic_user set isstart = 2 where user_id not in ($ids)");
+            // 更新进入自动下单的用户
+            $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
 
             if (empty($r['user_bottom']) ||
                 empty($r['user_top']) ||
@@ -90,9 +100,7 @@ class SetController extends BaseController
                 empty($r['time_top'])) {
                 $this->error('上下限区间不能为空，提交失败');
             }
-
             $result = $modelSet->where(1)->save($r);
-
             if($result)
             {
                 $this->success('更新成功', '/Admin/Set/automatic');

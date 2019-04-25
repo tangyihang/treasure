@@ -60,6 +60,27 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-lg-12" style="width: 100px;margin-top:10px;">
+                <div class="input-group input-group-sm" >
+                    <span class="input-group-addon" style="border: 1px solid #ccc;">选择自动下单用户：</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12" style="width: 100px;margin-top:10px;">
+                <div class="input-group input-group-sm" style="width: 800px;">
+                    <volist name="users" id="u" mod="2">
+                        <span style="margin-right: 20px;">
+                            <input name="users[]" type="checkbox" value="{{$u.user_id}}"
+                            <eq name="u.isstart" value="1">checked</eq> /> {{$u.nickname}}
+                        </span>
+                    </volist>
+                </div>
+            </div>
+        </div>
+
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">

@@ -63,7 +63,7 @@ class AutomaticOrderController extends Controller
     {
         // 从表中获取随机用户手机号
         $modelAutomaticUser = M('automatic_user');
-        $rowAll = $modelAutomaticUser->query("SELECT * FROM sh_automatic_user ORDER BY rand() LIMIT $userNum;");
+        $rowAll = $modelAutomaticUser->query("SELECT * FROM sh_automatic_user where isstart = 1 ORDER BY rand() LIMIT $userNum;");
         return $rowAll;
     }
 
