@@ -86,11 +86,17 @@ class SetController extends BaseController
             $r['isstart']	= I('post.isstart');
             // 更新自动下单用户
             $users = I('post.users');
-            $ids = implode(',', $users);
-            // 更新不进入自动下单的用户
-            $result2 = $modelUser->execute("update sh_automatic_user set isstart = 2 where user_id not in ($ids)");
-            // 更新进入自动下单的用户
-            $result3 = $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
+            $result3 = $result2 = '';
+            if (!empty($users)) {
+                $ids = implode(',', $users);
+                // 更新不进入自动下单的用户
+                $result2 = $modelUser->execute("update sh_automatic_user set isstart = 2 where user_id not in ($ids)");
+                // 更新进入自动下单的用户
+                $result3 = $modelUser->execute("update sh_automatic_user set isstart = 1 where user_id in ($ids)");
+            } else {
+                // 更新不进入自动下单的用户
+                $result2 = $modelUser->execute("update sh_automatic_user set isstart = 2");
+            }
 
             if (empty($r['user_bottom']) ||
                 empty($r['user_top']) ||
