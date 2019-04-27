@@ -46,8 +46,8 @@ class UserController extends BaseController {
 			$Upload 			= 	new \Think\Upload($setting);	//实例化
 			
 			$Upload->exts      	= 	array('jpg', 'gif', 'png', 'jpeg');
-			$upload->maxSize	= 	1024*1024*1024;
-			
+            $Upload->maxSize	= 	1024*1024*1024;
+
 			$resultQiniu 		= 	$Upload->upload();				//执行上传
 			
 			if (!$resultQiniu) {
