@@ -50,10 +50,10 @@ class UserController extends Controller {
 				exit;
 			}
 
-//			if (in_array($phone, array('18287709916', '15808772905'))) {
-//                $this->ajaxReturn(array('code'=>1, 'info'=>'系统升级，春节后上线。' ));
-//                exit;
-//            }
+			if (in_array($phone, array('15198655565'))) {
+                $this->ajaxReturn(array('code'=>1, 'info'=>'登陆失败，请联系客服。' ));
+                exit;
+            }
 			
 			session('member', $row);
 			
