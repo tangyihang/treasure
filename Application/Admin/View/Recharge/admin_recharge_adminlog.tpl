@@ -4,7 +4,7 @@
     <!--标题 start-->
     <div class="row pt20 pb20 lh30">
         <div class="col-lg-6">
-            <span class="glyphicon glyphicon-user pr10 f16"></span><span class="f18">二维码充值订单</span>
+            <span class="glyphicon glyphicon-user pr10 f16"></span><span class="f18">管理员充值记录</span>
         </div>
 
     </div>
