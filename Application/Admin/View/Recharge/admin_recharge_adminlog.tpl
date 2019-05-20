@@ -24,6 +24,17 @@
                     </div>
                 </div>
 
+                <div class="col-lg-2">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon">是否记入：</span>
+                        <select name="is_count_in" class="form-control">
+                            <option value="0">全部</option>
+                            <option value="1" <eq name="where['is_count_in']" value="1">selected</eq> >记入</option>
+                            <option value="2" <eq name="where['is_count_in']" value="2">selected</eq> >不记入</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="col-lg-3">
                     <div class="input-group input-group-sm">
                         <span class="input-group-addon">开始时间：</span>
@@ -58,43 +69,22 @@
                     </div>
                 </div>
             </form>
-            <div class="col-lg-2">
-                <div class="input-group input-group-sm">
-                    <a href="/Admin/Recharge/add.html"><button class="btn btn-info btn-sm">管理员充值</button></a>
-                </div>
-            </div>
         </div>
     </div>
-    <div class="row pt20">
-        <div class="col-lg-3">
-            <span class="input-group-addon">今日到账总额：{{$memberSum2}}</span>
-        </div>
-        <div class="col-lg-3">
-            <span class="input-group-addon">查询总额：{{$memberSum}}</span>
-        </div>
-        <div class="col-lg-2">
-            <div class="input-group input-group-sm">
-                <a href="/Admin/Recharge/adminlog.html"><button class="btn btn-info btn-sm">管理员充值记录</button></a>
-            </div>
-        </div>
-    </div>
-
     <!--表格 start-->
     <div class="row pt20">
         <div class="col-lg-12">
             <table class="table table-striped bg-ff">
                 <thead>
                 <tr class="success">
-                    <th>订单id</th>
                     <th>手机号</th>
                     <th>用户付款账号</th>
                     <th>充值金额</th>
-                    <th>到账金额</th>
                     <th>充值方式</th>
                     <th>二维码ID</th>
                     <th>到账账户</th>
+                    <th>是否记入</th>
                     <th>时间</th>
-                    <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -102,36 +92,20 @@
                     <tr
                     <eq name="mod" value="1">class="warning"</eq>
                     >
-                    <td>{{$o.order_id}}</td>
                     <td>{{$o.phone}}</td>
                     <td>{{$o.pay_account_name}}</td>
                     <td>{{$o.money}}</td>
-                    <td>{{$o.rechargemoney}}</td>
                     <td>
                         <eq name="o.pay_type" value="0">微信</eq>
                         <eq name="o.pay_type" value="1">支付宝</eq>
                     </td>
                     <td>{{$o.code_id}}</td>
                     <td>{{$o.code_name}}</td>
+                    <td>
+                        <eq name="o.is_count_in" value="1">记入</eq>
+                        <eq name="o.is_count_in" value="2">不记入</eq>
+                    </td>
                     <td>{{$o.created}}</td>
-                    <eq name="o.state" value="0">
-                        <neq name="o.code_id" value="0">
-                            <td>
-                                <a href="{{:U('Recharge/action', array('id'=>$o['id']))}}">到账处理</a> |
-                                <a href="{{:U('Recharge/del', array('id'=>$o['id']))}}">删除</a>
-                            </td>
-                        </neq>
-                        <eq name="o.code_id" value="0">
-                            <td>
-                                - | -
-                            </td>
-                        </eq>
-                    </eq>
-                    <eq name="o.state" value="1">
-                        <td>
-                            - | -
-                        </td>
-                    </eq>
                     </tr>
                 </volist>
                 </tbody>
