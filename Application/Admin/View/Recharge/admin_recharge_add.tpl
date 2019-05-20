@@ -62,7 +62,7 @@
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">
-                    <span class="input-group-addon">是否记入用户充值金额：</span>
+                    <span class="input-group-addon">是否记入充值订单：</span>
                     <span style="float: left; padding:5px 10px;border: 1px solid #ccc;">
                         <input name="is_count_in" type="radio" value="1" checked/> 是
                         <input name="is_count_in" type="radio" value="2"/> 否
