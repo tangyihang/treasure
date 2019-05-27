@@ -45,30 +45,30 @@ class CodeController extends BaseController
             $type = I('post.type');
             $name = I('post.name');
             $account = I('post.account');
+            $opening_bank = I('post.opening_bank');
+            $opening_bank_branch = I('post.opening_bank_branch');
             //参数空
             if (empty($name) || empty($account)) {
                 $this->error('参数不能为空！');
                 exit;
             }
 
-            if (empty($_FILES['code_img']['name'])) {
-                $this->error('图片不能为空！');
-                exit;
-            }
-
-            //图片上传
-            $setting = C('UPLOAD_SITEIMG_QINIU');
-            //上传到七牛云存储
-            $Upload = new \Think\Upload($setting);    //实例化
-            $resultQiniu = $Upload->upload();                //执行上传
-
-
             //格式化数据
             $r = array();
             $r['name'] = $name;
-            $r['code_img'] = $resultQiniu['code_img']['url']; //获取图片名称带扩展名
             $r['type'] = $type;
             $r['account'] = $account;
+            $r['opening_bank'] = $opening_bank;
+            $r['opening_bank_branch'] = $opening_bank_branch;
+
+            if (!empty($_FILES['code_img']['name'])) {
+                //图片上传
+                $setting = C('UPLOAD_SITEIMG_QINIU');
+                //上传到七牛云存储
+                $Upload = new \Think\Upload($setting);    //实例化
+                $resultQiniu = $Upload->upload();                //执行上传
+                $r['code_img'] = $resultQiniu['code_img']['url']; //获取图片名称带扩展名
+            }
 
             //入库
             $modelGoods = M('code');

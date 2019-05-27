@@ -76,7 +76,11 @@ class RechargeController extends BaseController
 
         // 获取图片连接信息
         $response['code'] = 11;
-        $response['info'] = $codeInfo['code_img'];
+        if ($type == 2) {
+            $response['info'] = $codeInfo;
+        } else {
+            $response['info'] = $codeInfo['code_img'];
+        }
         $response['recharge_id'] = $result;
         echo json_encode($response);
         exit;

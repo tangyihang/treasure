@@ -38,6 +38,22 @@
                 </div>
             </div>
         </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-5">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">开户行：</span>
+                    <input type="text" name="opening_bank" value="{{$output.code.opening_bank}}" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-5">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">开户行网点：</span>
+                    <input type="text" name="opening_bank_branch" value="{{$output.code.opening_bank_branch}}" class="form-control">
+                </div>
+            </div>
+        </div>
 
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
@@ -68,6 +84,9 @@
                         <option value="1"
                         <eq name="output['code']['type']" value="1">selected</eq>
                         >支付宝</option>
+                        <option value="1"
+                        <eq name="output['code']['type']" value="2">selected</eq>
+                        >银行卡</option>
                     </select>
                 </div>
             </div>

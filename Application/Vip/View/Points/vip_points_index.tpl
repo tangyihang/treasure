@@ -14,6 +14,9 @@
             <button type="button" class="mui-btn mui-btn-warning sub" data-type="1" style="width:100%;float: left;margin-bottom: 10px;">
                 支付宝支付
             </button>
+            <button type="button" class="mui-btn mui-btn-negative sub" data-type="2" style="width:100%;float: left;margin-bottom: 10px;">
+                银行卡支付
+            </button>
             <p style="text-align: right;padding-top:2rem; line-height: 40px;"><a href="/vip/Recharge/getlist">查看充值记录</a>
             </p>
         </div>
@@ -47,6 +50,25 @@
     <p style="text-align:center;line-height:3.5rem;">
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
             <a onclick="removeRecharge(1)" style="color: #ffffff;">取消</a>
+        </button>
+        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
+            <a href="/vip" style="color: #ffffff;">已支付</a>
+        </button>
+    </p>
+</div>
+
+<div id="bankshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:65%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
+    <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#FF0000;color:#FFF;">银行卡付款</p>
+    <p style="text-align:center;color: red;">支付成功后请点击已支付按钮</p>
+    <p style="text-align:center;">收款人名称：<span id="name" style="color: red;"></span></p>
+    <p style="text-align:center;">账号：<span id="account" style="color: red;"></span></p>
+    <p style="text-align:center;">银行：<span id="opening_bank" style="color: red;"></span></p>
+    <p style="text-align:center;">开户行网点：<span id="opening_bank_branch" style="color: red;"></span></p>
+    <p style="text-align:center;line-height:2.5rem;">5分钟内支付有效</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;">填写金额和支付金额要一致，不然会影响到账</p>
+    <p style="text-align:center;line-height:3.5rem;">
+        <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:20%;background: #b0b0b3;border-color: #b0b0b3;margin-right: 15px;">
+            <a onclick="removeRecharge(0)" style="color: #ffffff;">取消</a>
         </button>
         <button type="button" class="mui-btn mui-btn-warning" data-type="1" style="width:40%;">
             <a href="/vip" style="color: #ffffff;">已支付</a>
@@ -131,6 +153,14 @@
               $("#alipay_tishi").show();
             }
             $("#tip").hide();
+            mui(that).button('reset');
+          }
+          if (type == 2) {
+            $("#name").attr("src", response.info.name);
+            $("#account").attr("src", response.info.account);
+            $("#opening_bank").attr("src", response.info.opening_bank);
+            $("#opening_bank_branch").attr("src", response.info.opening_bank_branch);
+            $("#bankshow").show();
             mui(that).button('reset');
           }
           $("#recharge_id").val(response.recharge_id);

@@ -24,9 +24,11 @@
                 <thead>
                 <tr class="success">
                     <th>二维码ID</th>
-                    <th>名称</th>
                     <th>类型</th>
+                    <th>名称</th>
                     <th>收款账号</th>
+                    <th>开户行</th>
+                    <th>开户行网点</th>
                     <th>二维码图片</th>
                     <th>操作</th>
                 </tr>
@@ -37,12 +39,15 @@
                     <eq name="mod" value="1">class="warning"</eq>
                     >
                     <td>{{$o.id}}</td>
-                    <td>{{$o.name}}</td>
                     <td>
                         <eq name="o.type" value="0">微信</eq>
                         <eq name="o.type" value="1">支付宝</eq>
+                        <eq name="o.type" value="2">银行卡</eq>
                     </td>
+                    <td>{{$o.name}}</td>
                     <td>{{$o.account}}</td>
+                    <td>{{$o.opening_bank}}</td>
+                    <td>{{$o.opening_bank_branch}}</td>
                     <td>
                         <a target="_blank" href="{{$o.code_img}}">
                             <img width="30" height="30" src="{{$o.code_img}}"/>

@@ -18,9 +18,7 @@
     <div class="line3"></div>
 
     <form action="" method="post" enctype="multipart/form-data"/>
-
     <div class="pt20 pb20">
-
         <div class="row">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">
@@ -37,7 +35,22 @@
                 </div>
             </div>
         </div>
-
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-5">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">开户行：</span>
+                    <input type="text" name="opening_bank" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-lg-5">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">开户行网点：</span>
+                    <input type="text" name="opening_bank_branch" class="form-control">
+                </div>
+            </div>
+        </div>
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">
@@ -46,7 +59,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">
@@ -54,12 +66,12 @@
                     <select name="type" class="form-control">
                         <option value="0">微信</option>
                         <option value="1">支付宝</option>
+                        <option value="2">银行卡</option>
                     </select>
 
                 </div>
             </div>
         </div>
-
         <div class="row" style="margin-top:10px;">
             <div class="col-lg-5">
                 <div class="input-group input-group-sm">
@@ -67,15 +79,12 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     </form>
 
 </div>
 <!--button-box end-->
-
 <!--分隔线 end-->
 <!--right end-->
 </div>
