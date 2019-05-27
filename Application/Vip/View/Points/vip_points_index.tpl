@@ -59,8 +59,8 @@
 
 <div id="bankshow" style="display:none;position:fixed;top:30%;left:50%;z-index:9999999999;width:90%;height:65%;background:#FFF;margin-left:-45%;margin-top:-30%;text-align:center;box-shadow: 0px 0px 10px #888888;">
     <p id="zhifubao" style="line-height:3rem;text-align:center;border-bottom:1px solid #CCC;background:#FF0000;color:#FFF;">银行卡付款</p>
-    <p style="text-align:center;color: red;margin-top: 10px;">支付成功后请点击已支付按钮</p>
-    <p style="text-align:center;line-height:2.5rem;color: red;">5分钟内支付有效</p>
+    <p style="text-align:center;color: red;margin-top: 10px;">请转账到以下账户中</p>
+    <p style="text-align:center;line-height:2.5rem;color: red;">支付成功后点击已支付按钮</p>
     <p style="text-align:center;color: red;">填写金额和支付金额要一致，不然会影响到账</p>
     <p style="text-align:center;margin-top: 10px;">
         <span style="width: 40%;text-align: right;float: left;">收款人名称：</span>
