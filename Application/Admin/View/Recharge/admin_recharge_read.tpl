@@ -110,6 +110,7 @@
                     <td>
                         <eq name="o.pay_type" value="0">微信</eq>
                         <eq name="o.pay_type" value="1">支付宝</eq>
+                        <eq name="o.pay_type" value="2">银行卡</eq>
                     </td>
                     <td>{{$o.code_id}}</td>
                     <td>{{$o.code_name}}</td>

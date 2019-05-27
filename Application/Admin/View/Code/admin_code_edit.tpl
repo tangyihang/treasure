@@ -84,7 +84,7 @@
                         <option value="1"
                         <eq name="output['code']['type']" value="1">selected</eq>
                         >支付宝</option>
-                        <option value="1"
+                        <option value="2"
                         <eq name="output['code']['type']" value="2">selected</eq>
                         >银行卡</option>
                     </select>

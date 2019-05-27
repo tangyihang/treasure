@@ -106,6 +106,8 @@ class CodeController extends BaseController
             $type = I('post.type');
             $name = I('post.name');
             $account = I('post.account');
+            $opening_bank = I('post.opening_bank');
+            $opening_bank_branch = I('post.opening_bank_branch');
 
             //参数空
             if (empty($id) || empty($name) || empty($account)) {
@@ -119,6 +121,8 @@ class CodeController extends BaseController
             $r['name'] = $name;
             $r['account'] = $account;
             $r['type'] = $type;
+            $r['opening_bank'] = $opening_bank;
+            $r['opening_bank_branch'] = $opening_bank_branch;
 
             if (!empty($_FILES['code_img']['name'])) {
                 //图片上传
