@@ -49,9 +49,11 @@
                     <td>{{$o.opening_bank}}</td>
                     <td>{{$o.opening_bank_branch}}</td>
                     <td>
-                        <a target="_blank" href="{{$o.code_img}}">
-                            <img width="30" height="30" src="{{$o.code_img}}"/>
-                        </a>
+                        <if condition="$o.code_img neq ''">
+                            <a target="_blank" href="{{$o.code_img}}">
+                                <img width="30" height="30" src="{{$o.code_img}}"/>
+                            </a>
+                        </if>
                     </td>
                     <td>
                         <a href="{{:U('Code/edit', array('id'=>$o['id']))}}">修改</a> |
