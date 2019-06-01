@@ -64,11 +64,11 @@
     <p style="text-align:center;color: red;">填写金额和支付金额要一致，不然会影响到账</p>
     <p style="text-align:center;margin-top: 10px;">
         <span style="width: 40%;text-align: right;float: left;">收款人名称：</span>
-        <span id="name" style="color: red;text-align: left;width: 60%;float: left;"></span>
+        <span id="name" style="color: red;text-align: left;width: 60%;float: left;-webkit-user-select: all;"></span>
     </p>
     <p style="text-align:center;">
         <span style="width: 40%;text-align: right;float: left;">账号：</span>
-        <span id="account" style="color: red;text-align: left;width: 60%;float: left;"></span>
+        <span id="account" style="color: red;text-align: left;width: 60%;float: left;-webkit-user-select: all;"></span>
     </p>
     <p style="text-align:center;">
         <span style="width: 40%;text-align: right;float: left;">银行：</span>
