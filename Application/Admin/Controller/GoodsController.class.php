@@ -72,6 +72,7 @@ class GoodsController extends BaseController
     		$r = array();
     		$r['name'] 		= $name;
     		$r['img_url']	= $resultQiniu['goods_img']['url']; //获取图片名称带扩展名
+            $r['img_url']    = str_replace('http://faqis.me','https://faqis.me',$r['img_url']);
     		$r['cata_id']	= $cata_id;
     		
     		//入库
@@ -137,6 +138,7 @@ class GoodsController extends BaseController
     			$Upload 			= 	new \Think\Upload($setting);	//实例化
     			$resultQiniu 		= 	$Upload->upload();				//执行上传
     			$r['img_url']	= $resultQiniu['goods_img']['url']; //获取图片名称带扩展名
+                $r['img_url']    = str_replace('http://faqis.me','https://faqis.me',$r['img_url']);
     		}
     		 
     		

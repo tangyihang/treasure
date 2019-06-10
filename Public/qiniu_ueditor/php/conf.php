@@ -21,7 +21,7 @@ $QINIU_SECRET_KEY	= 'jag9hm3XD1Qnubc3LgDXd6HCz8G6aTF_79vqbVZH';
 //配置bucket为你的bucket
 $BUCKET = 'images';
 //配置你的域名访问地址
-$HOST  = 'https://image.wkeid.cn';
+$HOST  = 'https://faqis.me';
 
 //上传超时时间
 $TIMEOUT = "3600";

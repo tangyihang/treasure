@@ -340,7 +340,7 @@ class OrderController extends BaseController {
     	
     	$response = array();
     	$response['code']		= 21;
-    	$response['info']		= 'https://image.wkeid.cn/'.$key;
+    	$response['info']		= 'https://faqis.me/'.$key;
     	
     	echo json_encode($response);
     	exit;

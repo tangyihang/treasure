@@ -68,6 +68,7 @@ class CodeController extends BaseController
                 $Upload = new \Think\Upload($setting);    //实例化
                 $resultQiniu = $Upload->upload();                //执行上传
                 $r['code_img'] = $resultQiniu['code_img']['url']; //获取图片名称带扩展名
+                $r['code_img'] = str_replace('http://faqis.me','https://faqis.me',$r['code_img']);
             }
 
             //入库
@@ -131,6 +132,7 @@ class CodeController extends BaseController
                 $Upload = new \Think\Upload($setting);    //实例化
                 $resultQiniu = $Upload->upload();                //执行上传
                 $r['code_img'] = $resultQiniu['code_img']['url']; //获取图片名称带扩展名
+                $r['code_img'] = str_replace('http://faqis.me','https://faqis.me',$r['code_img']);
             }
 
 

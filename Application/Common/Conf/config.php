@@ -34,7 +34,7 @@ return array (
 				'driverConfig' 	=> array (
 						'secrectKey' 	=> 'jag9hm3XD1Qnubc3LgDXd6HCz8G6aTF_79vqbVZH',
 						'accessKey' 	=> 'x-zNaKvYyrrZLjHymq5iusSpkogZkYUwAKhARMI2',
-						'domain' 		=> 'image.wkeid.cn',
+						'domain' 		=> 'faqis.me',
 						'bucket' 		=> 'imgs',
 				),
 		),

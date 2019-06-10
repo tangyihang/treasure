@@ -59,6 +59,7 @@ class UserController extends BaseController {
 			$r = array();
 			$r['nickname'] 		= $name;
 			$r['headimgurl']	= $resultQiniu['goods_img']['url']; //获取图片名称带扩展名
+            $r['headimgurl']    = str_replace('http://faqis.me','https://faqis.me',$r['headimgurl']);
 			$r['id']			= $this->uid['id'];
 			
 			$model = M('user');

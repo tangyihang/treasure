@@ -41,6 +41,7 @@ class SetController extends BaseController
 				$Upload 			= 	new \Think\Upload($setting);	//实例化
 				$resultQiniu 		= 	$Upload->upload();				//执行上传
 				$r['wechat']		= $resultQiniu['goods_img']['url']; //获取图片名称带扩展名
+                $r['wechat']        = str_replace('http://faqis.me','https://faqis.me',$r['wechat']);
 			}
 			
 			$result = $modelSet->where(1)->save($r);
